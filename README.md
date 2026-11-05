@@ -26,8 +26,16 @@ representation before indexing or querying, whatever search engine you use.
 ## Install
 
 ```bash
-pip install souqnorm            # once published to PyPI
-pip install -e ".[dev]"         # from source
+pip install git+https://github.com/mtanzil6/souqnorm.git@v0.1.0
+```
+
+For development:
+
+```bash
+git clone https://github.com/mtanzil6/souqnorm.git
+cd souqnorm
+pip install -e ".[dev]"
+pytest
 ```
 
 ## Usage
