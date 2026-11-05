@@ -15,12 +15,23 @@ UNIT_LEXICON: dict[str, tuple[str, float, tuple[str, ...]]] = {
     "fl_oz": ("ml", 29.5735, ("fl oz", "fl. oz", "fl.oz", "floz")),
     "oz": ("ml", 29.5735, ("oz", "ounce", "ounces", "أونصة", "اونصة", "أوقية", "اوقية")),
     "g": ("g", 1.0, ("g", "gm", "gms", "gr", "grm", "gram", "grams", "gramme",
-                     "غ", "غم", "غرام", "جم", "جرام", "قرام")),
+                     "غ", "غم", "غرام", "جم", "جرام", "قرام", "ج")),
     "kg": ("g", 1000.0, ("kg", "kgs", "kilo", "kilogram", "kilograms",
                          "كغ", "كجم", "كلغ", "كيلو", "كيلوغرام", "كيلوجرام")),
     "mg": ("g", 0.001, ("mg", "ملغ", "ملجم", "مجم", "ملغم", "مليغرام", "مليجرام")),
-    "pcs": ("pcs", 1.0, ("pc", "pcs", "piece", "pieces", "قطعة", "قطع", "حبة", "حبات")),
+    "lb": ("g", 453.592, ("lb", "lbs", "pound", "pounds", "باوند", "رطل")),
+    "pcs": ("pcs", 1.0, ("pc", "pcs", "piece", "pieces", "count", "ct", "capsules", "caps", "tablets", "tabs",
+                         "sachets", "patches", "ampoules", "wipes", "pads",
+                         "قطعة", "قطع", "حبة", "حبات", "كبسولة", "كبسولات", "قرص", "أقراص", "منديل", "مناديل",
+                         "كيس", "أكياس", "لصقة", "لصقات", "أمبولة", "أمبولات", "وحدة", "وحدات", "قطنة",
+                         "شريحة", "شرائح", "ظرف", "أظرف")),
+    # length (dimensions of tools, cables, towels); multipliers are read as dimensions, not packs
+    "mm": ("mm", 1.0, ("mm", "ملم", "مم", "مليمتر", "ملليمتر")),
+    "cm": ("mm", 10.0, ("cm", "سم", "سنتيمتر", "سنتي")),
+    "m": ("mm", 1000.0, ("m", "م", "متر", "meter", "meters", "metre", "metres")),
 }
+
+_LENGTH = {"mm", "cm", "m"}
 
 
 @dataclass(frozen=True)
@@ -29,7 +40,7 @@ class Quantity:
     unit: str             # canonical unit key, e.g. "ml", "fl_oz"
     multiplier: int       # pack multiplier, 1 if absent ("2x50ml" -> 2)
     base_value: float     # value * factor * multiplier in the base unit
-    base_unit: str        # "ml", "g" or "pcs"
+    base_unit: str        # "ml", "g", "pcs" or "mm"
     text: str             # matched surface text (in normalized query)
     start: int
     end: int
@@ -68,6 +79,7 @@ class UnitParser:
         unit_re = "|".join(re.escape(a) for a in alts)
         self._pattern = re.compile(
             rf"(?:(?P<mult>\d+)\s*[x*]\s*)?(?P<num>\d+(?:\.\d+)?)\s*(?P<unit>{unit_re})(?![\w])"
+            r"(?!\s*(?:امبير|امب|amp|ampere|a\b|h\b))"  # "7000 ملي امبير" / "mAh" is battery capacity
         )
 
     @property
@@ -82,6 +94,9 @@ class UnitParser:
             base_unit, factor, _ = UNIT_LEXICON[unit]
             value = float(m.group("num"))
             mult = int(m.group("mult")) if m.group("mult") else 1
+            start = m.start()
+            if unit in _LENGTH and mult > 1:  # "38*29.5 سم" is a size, not a pack of 38
+                mult, start = 1, m.start("num")
             out.append(Quantity(value, unit, mult, round(value * factor * mult, 3), base_unit,
-                                m.group(0), m.start(), m.end()))
+                                normalized[start:m.end()], start, m.end()))
         return out

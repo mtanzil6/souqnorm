@@ -107,3 +107,22 @@ def test_match_key_cross_unit():
     b = process("shampoo 13.5 fl oz").quantities[0].match_key()
     c = process("شامبو 0.4 لتر").quantities[0].match_key()
     assert a == b == c == "qty:400ml"
+
+
+@pytest.mark.parametrize("query, label", [
+    ("جل شعر - 340ج", "340 g"),
+    ("كبسولات فيتامين - 60 كبسولة", "60 pcs"),
+    ("مناديل - 48 منديل", "48 pcs"),
+    ("بروتين - 1.6 باوند", "1.6 lb"),
+    ("كيبل شحن بطول 1.2م", "1.2 m"),
+    ("مجعد الشعر - 32 ملم", "32 mm"),
+    ("حقيبة - 38*29.5سم", "29.5 cm"),
+    ("أمبولة - 10x6مل", "10 x 6 ml"),
+])
+def test_real_catalog_patterns(query, label):
+    assert [q.label for q in process(query).quantities] == [label]
+
+
+@pytest.mark.parametrize("query", ["بطارية 7000 ملي امبير", "power bank 10000 mah"])
+def test_battery_capacity_not_volume(query):
+    assert process(query).quantities == []

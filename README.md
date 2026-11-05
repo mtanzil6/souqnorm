@@ -13,9 +13,11 @@ representation before indexing or querying, whatever search engine you use.
   and strips diacritics (harakat) and tatweel. It also converts Arabic-Indic and Persian digits and the Arabic
   decimal mark (٫), applies NFKC, lowercases Latin text and splits number/script boundaries
   (`400مل` → `400 مل`). Every step can be switched off in `NormalizerConfig`.
-- **Size and quantity parsing.** It recognizes Arabic and English unit spellings (مل/ملل/مللي/ml, لتر/l, جم/غرام/g,
-  كجم/kg, ملغ/mg, oz/fl oz/أونصة, قطعة/حبة/pcs) and pack multipliers (`2×50 مل`). It converts each size to a
-  base unit (ml, g, pcs) and gives it a unit-independent `match_key` (400 ml ≡ 13.5 fl oz ≡ 0.4 l).
+- **Size and quantity parsing.** It recognizes Arabic and English unit spellings for volume (مل/ملل/مللي/ml, لتر/l,
+  oz/fl oz/أونصة), mass (جم/ج/غرام/g, كجم/kg, ملغ/mg, باوند/lb), counts (قطعة/حبة/كبسولة/قرص/منديل/كيس/pcs) and
+  length (ملم/سم/م/mm/cm/m), plus pack multipliers (`2×50 مل`, `10x6مل`). Battery capacity (`7000 ملي امبير`) is
+  not mistaken for volume. It converts each size to a
+  base unit (ml, g, pcs, mm) and gives it a unit-independent `match_key` (400 ml ≡ 13.5 fl oz ≡ 0.4 l).
 - **Alternative keywords.** It builds a clean keyword list for query expansion. Numbers, unit words (e.g. `مل`),
   special characters and empty strings are removed. Hyphenated words are both split and joined
   (`anti-aging` → `anti`, `aging`, `antiaging`), and article-stripped forms are added (`للشعر` → `شعر`, `بالصبار` → `صبار`).
@@ -60,7 +62,14 @@ python benchmarks/build_benchmark.py      # synthetic catalog + perturbed querie
 python benchmarks/run_benchmark.py        # writes benchmarks/results/results.json
 ```
 
-The retrieval benchmark is **synthetic**. It uses fictional brands and template titles, and its queries are made by
+To evaluate on a real catalog (not distributed here), run:
+
+```bash
+pip install openpyxl
+python benchmarks/real_titles.py path/to/titles.xlsx   # writes benchmarks/results/real_titles.json
+```
+
+The `build_benchmark.py` retrieval benchmark is **synthetic**. It uses fictional brands and template titles, and its queries are made by
 applying common Arabic spelling variations. It shows how each normalization step affects results, but it is not a
 substitute for evaluation on real query logs.
 
