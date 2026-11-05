@@ -168,7 +168,9 @@ def main() -> None:
 
     systems = {"baseline (lowercase+split)": baseline_analyzer,
                "souqnorm normalize": lambda t: qn.tokenize(qn.normalize(t)),
-               "souqnorm full (keys + keywords)": sq_analyzer}
+               "+ quantity keys": lambda t: (lambda r: qn.tokenize(r.text_without_quantities)
+                                             + [q.match_key() for q in r.quantities])(qn.process(t)),
+               "+ quantity keys + keywords": sq_analyzer}
     out["E3_retrieval"] = {"num_queries": len(queries),
                            "mean_relevant_per_query": sum(len(q["relevant"]) for q in queries) / len(queries)}
     for name, an in systems.items():

@@ -126,3 +126,11 @@ def test_real_catalog_patterns(query, label):
 @pytest.mark.parametrize("query", ["بطارية 7000 ملي امبير", "power bank 10000 mah"])
 def test_battery_capacity_not_volume(query):
     assert process(query).quantities == []
+
+
+def test_stopwords_and_count_nouns_in_keywords():
+    r = process("أمبولة لتساقط الشعر من كيراستاس - 10x6مل")
+    assert "من" not in r.keywords
+    assert "امبوله" in r.keywords
+    assert "مل" not in r.keywords
+    assert "او" in process("عطر او دو بارفيوم").keywords

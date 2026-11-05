@@ -11,6 +11,9 @@ _TOKEN = re.compile(rf"[{AR_RANGE}a-z0-9]+(?:[-'.][{AR_RANGE}a-z0-9]+)*")
 _NUMERIC = re.compile(r"^\d+(?:\.\d+)?$")
 # definite-article forms, longest first: wa-al, bi-al, ka-al, fa-al, li-l, al
 _ARTICLE_PREFIXES = ("وال", "بال", "كال", "فال", "لل", "ال")
+# Function words dropped from keywords. "او" is deliberately kept: in catalogs it is usually "eau" (او دو بارفيوم).
+DEFAULT_STOPWORDS = frozenset({"من", "في", "مع", "علي", "الي", "عن", "لـ", "و", "ب", "ل", "الذي", "التي",
+                               "for", "with", "and", "of", "the", "by", "from", "in", "to", "a", "an"})
 
 
 @dataclass
@@ -56,12 +59,13 @@ class QueryNormalizer:
     """
 
     def __init__(self, config: NormalizerConfig | None = None, strip_article: bool = True,
-                 min_keyword_len: int = 2):
+                 min_keyword_len: int = 2, stopwords: frozenset[str] | None = DEFAULT_STOPWORDS):
         self.config = config or NormalizerConfig()
         self.units = UnitParser(self.config)
         self.strip_article = strip_article
         self.min_keyword_len = min_keyword_len
         self._unit_words = self.units.unit_words
+        self.stopwords = frozenset(normalize_text(w, self.config) for w in (stopwords or ()))
 
     def normalize(self, text: str) -> str:
         return normalize_text(text, self.config)
@@ -70,8 +74,8 @@ class QueryNormalizer:
         return _TOKEN.findall(normalized)
 
     def keywords(self, tokens: list[str]) -> list[str]:
-        """Alternative keywords: drops numbers, unit words (e.g. 'مل'), special characters and
-        empty strings; splits and joins hyphenated words; optionally adds article-stripped forms."""
+        """Alternative keywords: drops numbers, unit words (e.g. 'مل'), stopwords, special characters
+        and empty strings; splits and joins hyphenated words; optionally adds article-stripped forms."""
         out: list[str] = []
         for tok in tokens:
             parts = [p for p in re.split(r"[-'.]", tok) if p]
@@ -79,7 +83,7 @@ class QueryNormalizer:
             for c in candidates:
                 if _NUMERIC.match(c) or c.isdigit() or c in self._unit_words:
                     continue
-                if len(c) < self.min_keyword_len:
+                if len(c) < self.min_keyword_len or c in self.stopwords:
                     continue
                 out.append(c)
                 if self.strip_article:

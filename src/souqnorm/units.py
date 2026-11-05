@@ -84,8 +84,10 @@ class UnitParser:
 
     @property
     def unit_words(self) -> frozenset[str]:
-        """Every normalized unit token (single words only), e.g. {'مل', 'ml', ...}."""
-        return frozenset(w for s in self._surface_to_unit for w in s.split())
+        """Normalized measurement-unit tokens (volume, mass, length), e.g. {'مل', 'ml', 'جم', ...}.
+        Count nouns such as 'مناديل' or 'امبوله' are excluded because they also name products."""
+        return frozenset(w for s, u in self._surface_to_unit.items() if UNIT_LEXICON[u][0] != "pcs"
+                         for w in s.split())
 
     def parse(self, normalized: str) -> list[Quantity]:
         out: list[Quantity] = []
