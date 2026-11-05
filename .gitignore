@@ -5,3 +5,4 @@ build/
 dist/
 *.xlsx
 benchmarks/results/real_titles.json
+.DS_Store
