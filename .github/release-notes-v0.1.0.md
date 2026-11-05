@@ -11,5 +11,5 @@ First public release.
 No runtime dependencies. Python 3.9+.
 
 ```bash
-pip install git+https://github.com/mtanzil66/souqnorm@v0.1.0
+pip install git+https://github.com/mtanzil6/souqnorm@v0.1.0
 ```
