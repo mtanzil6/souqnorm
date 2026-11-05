@@ -1,6 +1,6 @@
 """Build a synthetic, reproducible Arabic/English beauty-product retrieval benchmark.
 
-The catalog uses fictional brands and template-generated titles written in standard orthography.
+The catalog uses fictional brands and titles built from templates written in standard orthography.
 Queries are derived from a target product by sampling a subset of its title words and applying
 orthographic and formatting perturbations commonly seen in user-typed Arabic search queries
 (hamza/alef variation, taa marbuta written as haa, alef maqsura/yaa confusion, tatweel, diacritics,
