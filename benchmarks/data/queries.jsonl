@@ -1,0 +1,540 @@
+{"qid": "Q0001", "query": "شامبو", "target": "P0001", "relevant": ["P0001", "P0002", "P0003", "P0004", "P0005", "P0006", "P0007", "P0008", "P0009", "P0010", "P0011", "P0012", "P0013", "P0014", "P0015"]}
+{"qid": "Q0002", "query": "شامبو 100مللي", "target": "P0001", "relevant": ["P0001", "P0002", "P0006", "P0008", "P0010"]}
+{"qid": "Q0003", "query": "شامبو 100 مل نورُيش", "target": "P0002", "relevant": ["P0001", "P0002"]}
+{"qid": "Q0004", "query": "شامبو Noorish", "target": "P0002", "relevant": ["P0001", "P0002", "P0003"]}
+{"qid": "Q0005", "query": "شامبو نوريش ٥٠ مل بفيتاّمين سي", "target": "P0003", "relevant": ["P0003"]}
+{"qid": "Q0006", "query": "50ملل شامبو سى", "target": "P0003", "relevant": ["P0003"]}
+{"qid": "Q0007", "query": "شاِمبو 30ملل روــضة بالورد", "target": "P0004", "relevant": ["P0004"]}
+{"qid": "Q0008", "query": "شاــمبو 30ml", "target": "P0004", "relevant": ["P0004"]}
+{"qid": "Q0009", "query": "٤٠٠ ml شامبو روّضه سي", "target": "P0005", "relevant": ["P0005"]}
+{"qid": "Q0010", "query": "شامبو سى", "target": "P0005", "relevant": ["P0003", "P0005", "P0013"]}
+{"qid": "Q0011", "query": "100مل شامبو", "target": "P0006", "relevant": ["P0001", "P0002", "P0006", "P0008", "P0010"]}
+{"qid": "Q0012", "query": "١٠٠مللي شامبو", "target": "P0006", "relevant": ["P0001", "P0002", "P0006", "P0008", "P0010"]}
+{"qid": "Q0013", "query": "200 مللي شامبو أزورا بالفحم", "target": "P0007", "relevant": ["P0007"]}
+{"qid": "Q0014", "query": "شامبو بالفحم 200مللي azora", "target": "P0007", "relevant": ["P0007"]}
+{"qid": "Q0015", "query": "شاَمبو مرطّب 3.4 oz مكثّف", "target": "P0008", "relevant": ["P0008"]}
+{"qid": "Q0016", "query": "3.4 oz شامبو مكثّف Azora", "target": "P0008", "relevant": ["P0008"]}
+{"qid": "Q0017", "query": "شامبو ٥٠ML", "target": "P0009", "relevant": ["P0003", "P0009"]}
+{"qid": "Q0018", "query": "شامبوُ ازورا اـــلجاف", "target": "P0009", "relevant": ["P0009"]}
+{"qid": "Q0019", "query": "شامبو خالٍ 100 مل من الكبريتات", "target": "P0010", "relevant": ["P0006", "P0010"]}
+{"qid": "Q0020", "query": "شامبو فيليستا خالٍ منَ كبريتات ١٠٠ مل", "target": "P0010", "relevant": ["P0010"]}
+{"qid": "Q0021", "query": "200ml شامبوْ", "target": "P0011", "relevant": ["P0007", "P0011"]}
+{"qid": "Q0022", "query": "شامبو فيليستا الـحساسة 200 مللي", "target": "P0011", "relevant": ["P0011"]}
+{"qid": "Q0023", "query": "شامبو فيليـستا", "target": "P0012", "relevant": ["P0010", "P0011", "P0012"]}
+{"qid": "Q0024", "query": "شامبو فيليستا أرغان 250 ملل", "target": "P0012", "relevant": ["P0012"]}
+{"qid": "Q0025", "query": "شامبو مـــِسك بفيتامين سي", "target": "P0013", "relevant": ["P0013"]}
+{"qid": "Q0026", "query": "شامبو misk بفيتامين سي 400ملل", "target": "P0013", "relevant": ["P0013"]}
+{"qid": "Q0027", "query": "شامبو للبشره حساسه 250ml Misk", "target": "P0014", "relevant": ["P0014"]}
+{"qid": "Q0028", "query": "٢٥٠ملل شامـبو", "target": "P0014", "relevant": ["P0012", "P0014"]}
+{"qid": "Q0029", "query": "شامبو 13.5 أونصة مِسكّ بالَورد", "target": "P0015", "relevant": ["P0015"]}
+{"qid": "Q0030", "query": "شامبوّ مِـــسك بالورد ٤٠٠مللي", "target": "P0015", "relevant": ["P0015"]}
+{"qid": "Q0031", "query": "بلسم ١٠٠مللي عسل", "target": "P0016", "relevant": ["P0016"]}
+{"qid": "Q0032", "query": "بلسم أزورا", "target": "P0016", "relevant": ["P0016", "P0017", "P0018"]}
+{"qid": "Q0033", "query": "500 ml azora بلسم بشره الحساسة", "target": "P0017", "relevant": ["P0017"]}
+{"qid": "Q0034", "query": "بــلسم 16.9 fl oz ازوراُ", "target": "P0017", "relevant": ["P0017", "P0018"]}
+{"qid": "Q0035", "query": "بلسم ازورا 500ML بالورد", "target": "P0018", "relevant": ["P0018"]}
+{"qid": "Q0036", "query": "بلــسمّ azora بالورد", "target": "P0018", "relevant": ["P0018"]}
+{"qid": "Q0037", "query": "بلسِم misk", "target": "P0019", "relevant": ["P0019", "P0020", "P0021"]}
+{"qid": "Q0038", "query": "بلسم مِسك 5.1 أونصة بالورد", "target": "P0019", "relevant": ["P0019"]}
+{"qid": "Q0039", "query": "بلسم 100 مللي", "target": "P0020", "relevant": ["P0016", "P0020"]}
+{"qid": "Q0040", "query": "بلسم صبار misk", "target": "P0020", "relevant": ["P0020"]}
+{"qid": "Q0041", "query": "بلسم مِسك الكبريتات 250 مللي", "target": "P0021", "relevant": ["P0021"]}
+{"qid": "Q0042", "query": "بلسم كبريتاتُ", "target": "P0021", "relevant": ["P0021", "P0022"]}
+{"qid": "Q0043", "query": "٢٠٠ml بــلسم لومورا", "target": "P0022", "relevant": ["P0022", "P0023"]}
+{"qid": "Q0044", "query": "بلسم لومورا خالٍ من 6.8 أونصة كبريتــات", "target": "P0022", "relevant": ["P0022"]}
+{"qid": "Q0045", "query": "بلسم للتجاعيد", "target": "P0023", "relevant": ["P0023", "P0029"]}
+{"qid": "Q0046", "query": "200 ملل بلسم مضاد تجاعيد", "target": "P0023", "relevant": ["P0023"]}
+{"qid": "Q0047", "query": "٤٠٠ML بلسم", "target": "P0024", "relevant": ["P0024", "P0029"]}
+{"qid": "Q0048", "query": "بلسم لومورا بشره ٤٠٠ ML الحساسة", "target": "P0024", "relevant": ["P0024"]}
+{"qid": "Q0049", "query": "بلسم 150مل", "target": "P0025", "relevant": ["P0019", "P0025", "P0026", "P0027"]}
+{"qid": "Q0050", "query": "بـلسم صــبار 150ML", "target": "P0025", "relevant": ["P0025"]}
+{"qid": "Q0051", "query": "بلــسم مرطّب rawda مكثّف", "target": "P0026", "relevant": ["P0026"]}
+{"qid": "Q0052", "query": "١٥٠ ML بلسّم روضه مكثّف", "target": "P0026", "relevant": ["P0026"]}
+{"qid": "Q0053", "query": "بلسم روضه حساسة", "target": "P0027", "relevant": ["P0027"]}
+{"qid": "Q0054", "query": "بلسم للبشــره ١٥٠ملل rawda حساسه", "target": "P0027", "relevant": ["P0027"]}
+{"qid": "Q0055", "query": "بُلسم عسل ٥٠ ML", "target": "P0028", "relevant": ["P0028"]}
+{"qid": "Q0056", "query": "بلسم 50مل نوريش بالعسل", "target": "P0028", "relevant": ["P0028"]}
+{"qid": "Q0057", "query": "٤٠٠ ml بلسم للتجاعيد", "target": "P0029", "relevant": ["P0029"]}
+{"qid": "Q0058", "query": "بلسّم نوريش مضاد للتجاعيد 13.5 fl oz", "target": "P0029", "relevant": ["P0029"]}
+{"qid": "Q0059", "query": "بــلسم نَوريش صبار 500 ملل", "target": "P0030", "relevant": ["P0030"]}
+{"qid": "Q0060", "query": "بلسم ٥٠٠ ملل بـــالصبار noorish", "target": "P0030", "relevant": ["P0030"]}
+{"qid": "Q0061", "query": "٥٠٠ملل كريم Dana مرطب", "target": "P0031", "relevant": ["P0031"]}
+{"qid": "Q0062", "query": "كريم 500مللي مـــرطب سى", "target": "P0031", "relevant": ["P0031"]}
+{"qid": "Q0063", "query": "٢٠٠ml كريَم مرطب", "target": "P0032", "relevant": ["P0032"]}
+{"qid": "Q0064", "query": "Dana كريمَ مرطب 200 ml بالصبار", "target": "P0032", "relevant": ["P0032"]}
+{"qid": "Q0065", "query": "كريم 100مللي مـــرطب حساسة", "target": "P0033", "relevant": ["P0033"]}
+{"qid": "Q0066", "query": "كريم مرطب دانة الحساُسه 100ملل", "target": "P0033", "relevant": ["P0033"]}
+{"qid": "Q0067", "query": "كرـيم مرطب", "target": "P0034", "relevant": ["P0031", "P0032", "P0033", "P0034", "P0035", "P0036", "P0037", "P0038", "P0039", "P0040", "P0041", "P0042", "P0043", "P0044", "P0045"]}
+{"qid": "Q0068", "query": "كـريم مرطب 250ml", "target": "P0034", "relevant": ["P0034", "P0036", "P0041", "P0042"]}
+{"qid": "Q0069", "query": "كْريم مرطب 150ml لومورا الأرغان", "target": "P0035", "relevant": ["P0035"]}
+{"qid": "Q0070", "query": "كريم مرـــطب بزـيت الأرغان 150ML", "target": "P0035", "relevant": ["P0035"]}
+{"qid": "Q0071", "query": "كريم مرطب كبريتـــات ٢٥٠ ml", "target": "P0036", "relevant": ["P0036"]}
+{"qid": "Q0072", "query": "كريمَ Lumora مرِطب ٢٥٠ML", "target": "P0036", "relevant": ["P0034", "P0036"]}
+{"qid": "Q0073", "query": "كريم 150 ml مرطب أزورا بالورد", "target": "P0037", "relevant": ["P0037"]}
+{"qid": "Q0074", "query": "كرـــيم ١٥٠مل مرطب أزورا بالورد", "target": "P0037", "relevant": ["P0037"]}
+{"qid": "Q0075", "query": "كــريم مرطَب بالفحم 500مل", "target": "P0038", "relevant": ["P0038"]}
+{"qid": "Q0076", "query": "Azora كريم مرطب بالفحم", "target": "P0038", "relevant": ["P0038"]}
+{"qid": "Q0077", "query": "كريم مرطب 150 مل Azora بُالصبار", "target": "P0039", "relevant": ["P0039"]}
+{"qid": "Q0078", "query": "كرـيم مرطبُ 150ملل", "target": "P0039", "relevant": ["P0035", "P0037", "P0039", "P0045"]}
+{"qid": "Q0079", "query": "كريمَ مرـــطب 30 ML مكثّف", "target": "P0040", "relevant": ["P0040"]}
+{"qid": "Q0080", "query": "كريم مرطب ســراج مرطّب ٣٠ مل مكثّف", "target": "P0040", "relevant": ["P0040"]}
+{"qid": "Q0081", "query": "250 ML Siraj كرُـيم مِرطب الجاف", "target": "P0041", "relevant": ["P0041"]}
+{"qid": "Q0082", "query": "كريمُ مرطب 8.5 fl oz", "target": "P0041", "relevant": ["P0034", "P0036", "P0041", "P0042"]}
+{"qid": "Q0083", "query": "250 ML كرُيم Siraj مرطب", "target": "P0042", "relevant": ["P0041", "P0042"]}
+{"qid": "Q0084", "query": "8.5 fl oz كـــريم مرطب", "target": "P0042", "relevant": ["P0034", "P0036", "P0041", "P0042"]}
+{"qid": "Q0085", "query": "كريم مرطبَ", "target": "P0043", "relevant": ["P0031", "P0032", "P0033", "P0034", "P0035", "P0036", "P0037", "P0038", "P0039", "P0040", "P0041", "P0042", "P0043", "P0044", "P0045"]}
+{"qid": "Q0086", "query": "كرــيم مرطبُ بالصبار 3.4 أونصة", "target": "P0043", "relevant": ["P0043"]}
+{"qid": "Q0087", "query": "كريم مرطب مِسك الكبريتات 50 ملل", "target": "P0044", "relevant": ["P0044"]}
+{"qid": "Q0088", "query": "كريم مرــطب 50 مللي", "target": "P0044", "relevant": ["P0044"]}
+{"qid": "Q0089", "query": "كريم مرطب مِسكِ بفيتامين ١٥٠ML سي", "target": "P0045", "relevant": ["P0045"]}
+{"qid": "Q0090", "query": "misk كريم مرطب ١٥٠ مللي", "target": "P0045", "relevant": ["P0045"]}
+{"qid": "Q0091", "query": "1.0 fl oz عطر", "target": "P0046", "relevant": ["P0046", "P0052"]}
+{"qid": "Q0092", "query": "عطر الحساْسة Rawda 30 ملل", "target": "P0046", "relevant": ["P0046"]}
+{"qid": "Q0093", "query": "عطر تجاعيد ١٠٠مللي", "target": "P0047", "relevant": ["P0047"]}
+{"qid": "Q0094", "query": "عّطر 100 ملل مضاد للتجاعيد", "target": "P0047", "relevant": ["P0047"]}
+{"qid": "Q0095", "query": "200 مل عطر rawda", "target": "P0048", "relevant": ["P0048"]}
+{"qid": "Q0096", "query": "عطر روضة بَشرة 200مل الدهنيه", "target": "P0048", "relevant": ["P0048"]}
+{"qid": "Q0097", "query": "عطر 6.8 fl oz lumora", "target": "P0049", "relevant": ["P0049"]}
+{"qid": "Q0098", "query": "200 ملل عطر", "target": "P0049", "relevant": ["P0048", "P0049", "P0060"]}
+{"qid": "Q0099", "query": "عطر لومورا بزيت الارغانُ 50 ملل", "target": "P0050", "relevant": ["P0050"]}
+{"qid": "Q0100", "query": "عطر Lumora", "target": "P0050", "relevant": ["P0049", "P0050", "P0051"]}
+{"qid": "Q0101", "query": "عطر خالٍ lumora من الكبريتَات", "target": "P0051", "relevant": ["P0051"]}
+{"qid": "Q0102", "query": "16.9 oz عطر خالٍُ منّ Lumora الكــبريتات", "target": "P0051", "relevant": ["P0051"]}
+{"qid": "Q0103", "query": "عطر سراج بالورد ٣٠ ملل", "target": "P0052", "relevant": ["P0052"]}
+{"qid": "Q0104", "query": "عطْر سراج بـالورد", "target": "P0052", "relevant": ["P0052"]}
+{"qid": "Q0105", "query": "عطر سراج تجاـــعيد", "target": "P0053", "relevant": ["P0053"]}
+{"qid": "Q0106", "query": "عطر سراج", "target": "P0053", "relevant": ["P0052", "P0053", "P0054"]}
+{"qid": "Q0107", "query": "عطر 250 مل شعر جَاف", "target": "P0054", "relevant": ["P0054"]}
+{"qid": "Q0108", "query": "عطر 8.5 oz سراج اُلجاف", "target": "P0054", "relevant": ["P0054"]}
+{"qid": "Q0109", "query": "٥٠٠مل عطر نوريش بالصبار", "target": "P0055", "relevant": ["P0055"]}
+{"qid": "Q0110", "query": "Noorish عطر ٥٠٠ ML", "target": "P0055", "relevant": ["P0055"]}
+{"qid": "Q0111", "query": "عطر نوريش الحساسه 150 مللي", "target": "P0056", "relevant": ["P0056"]}
+{"qid": "Q0112", "query": "عطر للـــبشرة حساسة 5.1 أونصة", "target": "P0056", "relevant": ["P0056"]}
+{"qid": "Q0113", "query": "عطر بالورد ١٥٠ML", "target": "P0057", "relevant": ["P0057"]}
+{"qid": "Q0114", "query": "عطر نوريش ١٥٠ مل", "target": "P0057", "relevant": ["P0056", "P0057"]}
+{"qid": "Q0115", "query": "عطر دــانة", "target": "P0058", "relevant": ["P0058", "P0059", "P0060"]}
+{"qid": "Q0116", "query": "عطر 100ml الكبريتات", "target": "P0058", "relevant": ["P0058"]}
+{"qid": "Q0117", "query": "١٠٠مل عّطر دـانة الجاف", "target": "P0059", "relevant": ["P0059"]}
+{"qid": "Q0118", "query": "عطر دانه 100ml", "target": "P0059", "relevant": ["P0058", "P0059"]}
+{"qid": "Q0119", "query": "عطر داـنه ارـغان 200 مللي", "target": "P0060", "relevant": ["P0060"]}
+{"qid": "Q0120", "query": "عطر بزيّت ارغان", "target": "P0060", "relevant": ["P0050", "P0060"]}
+{"qid": "Q0121", "query": "واقي شمس مكثّف", "target": "P0061", "relevant": ["P0061"]}
+{"qid": "Q0122", "query": "واقي شمس مرطِّب مكثّف ١٥٠ مللي", "target": "P0061", "relevant": ["P0061"]}
+{"qid": "Q0123", "query": "200مللي واقى شمس سي", "target": "P0062", "relevant": ["P0062"]}
+{"qid": "Q0124", "query": "واقي شمس دانة 200 مل سي", "target": "P0062", "relevant": ["P0062"]}
+{"qid": "Q0125", "query": "واــقي شمُس 400ml دانة تُجاعيد", "target": "P0063", "relevant": ["P0063"]}
+{"qid": "Q0126", "query": "واقي Dana شمِس ٤٠٠ملل مضاد للتجاعيد", "target": "P0063", "relevant": ["P0063"]}
+{"qid": "Q0127", "query": "واقِي 400مللي شمس أزــورا بفيتامين سي", "target": "P0064", "relevant": ["P0064"]}
+{"qid": "Q0128", "query": "واقي 13.5 fl oz شمُس ازورا سي", "target": "P0064", "relevant": ["P0064"]}
+{"qid": "Q0129", "query": "واقي ٣٠مل شمس", "target": "P0065", "relevant": ["P0065", "P0068", "P0069"]}
+{"qid": "Q0130", "query": "واقيُ شمس أزورا فحم", "target": "P0065", "relevant": ["P0065"]}
+{"qid": "Q0131", "query": "واقي شمَس أزورا", "target": "P0066", "relevant": ["P0064", "P0065", "P0066"]}
+{"qid": "Q0132", "query": "واقى azora شمس ٢٥٠ مل مضاد تجاعيد", "target": "P0066", "relevant": ["P0066"]}
+{"qid": "Q0133", "query": "50ملل واقي شمس ارغان", "target": "P0067", "relevant": ["P0067"]}
+{"qid": "Q0134", "query": "واـــقي شمس فيليستا بزيت الأرغان", "target": "P0067", "relevant": ["P0067"]}
+{"qid": "Q0135", "query": "واقى شمس فيليستا 30ml", "target": "P0068", "relevant": ["P0068", "P0069"]}
+{"qid": "Q0136", "query": "30 مل واقي شمس فــيليستا", "target": "P0068", "relevant": ["P0068", "P0069"]}
+{"qid": "Q0137", "query": "٣٠ملل واقي شمس دهنّـية", "target": "P0069", "relevant": ["P0069"]}
+{"qid": "Q0138", "query": "velista واقى 30 مللي شمس الدهنيه", "target": "P0069", "relevant": ["P0069"]}
+{"qid": "Q0139", "query": "واقْي ٥٠٠ML شمس Rawda بالفحم", "target": "P0070", "relevant": ["P0070"]}
+{"qid": "Q0140", "query": "واقى شمس روضه باّلفحم ٥٠٠ ML", "target": "P0070", "relevant": ["P0070"]}
+{"qid": "Q0141", "query": "واقي شمس رـــوضه ٥٠٠ مل", "target": "P0071", "relevant": ["P0070", "P0071"]}
+{"qid": "Q0142", "query": "وـــاقي شمس روضه ٥٠٠ ml كبريتات", "target": "P0071", "relevant": ["P0071"]}
+{"qid": "Q0143", "query": "٤٠٠ مل واقي شمس روضه بفيتامين سي", "target": "P0072", "relevant": ["P0072"]}
+{"qid": "Q0144", "query": "واُقي ٤٠٠ مللي شمس", "target": "P0072", "relevant": ["P0063", "P0064", "P0072", "P0073"]}
+{"qid": "Q0145", "query": "واقي 13.5 أونصة شمس مضاد للتجاعيد", "target": "P0073", "relevant": ["P0063", "P0073"]}
+{"qid": "Q0146", "query": "واـــقي شمس 400 مل سراّج مضاد للتجاعيد", "target": "P0073", "relevant": ["P0073"]}
+{"qid": "Q0147", "query": "واقي شمس سرــّاج شعر 100 ملل الجاف", "target": "P0074", "relevant": ["P0074"]}
+{"qid": "Q0148", "query": "واقى شمس", "target": "P0074", "relevant": ["P0061", "P0062", "P0063", "P0064", "P0065", "P0066", "P0067", "P0068", "P0069", "P0070", "P0071", "P0072", "P0073", "P0074", "P0075"]}
+{"qid": "Q0149", "query": "واقيَ شمس خالٍِ مُن siraj الكبريتات", "target": "P0075", "relevant": ["P0075"]}
+{"qid": "Q0150", "query": "واقي ١٠٠ ML شمس", "target": "P0075", "relevant": ["P0074", "P0075"]}
+{"qid": "Q0151", "query": "زيت 400مل شعر خالٍ من كبريتات", "target": "P0076", "relevant": ["P0076"]}
+{"qid": "Q0152", "query": "زيت شعر لومورا خالٍِ من كبريتات", "target": "P0076", "relevant": ["P0076"]}
+{"qid": "Q0153", "query": "زيت 6.8 oz Lumora شعر", "target": "P0077", "relevant": ["P0077"]}
+{"qid": "Q0154", "query": "زيت شعر عسل", "target": "P0077", "relevant": ["P0077", "P0083"]}
+{"qid": "Q0155", "query": "زيت شعّر لومورا", "target": "P0078", "relevant": ["P0076", "P0077", "P0078"]}
+{"qid": "Q0156", "query": "زيت شعر لــومورا 1.0 oz مكثّف", "target": "P0078", "relevant": ["P0078"]}
+{"qid": "Q0157", "query": "misk ٢٥٠مللي زيت شعر", "target": "P0079", "relevant": ["P0079"]}
+{"qid": "Q0158", "query": "زيت شعر مِسك 250ml للتجاعيد", "target": "P0079", "relevant": ["P0079"]}
+{"qid": "Q0159", "query": "٥٠٠ ml زيت شعرُ بالصبار", "target": "P0080", "relevant": ["P0080"]}
+{"qid": "Q0160", "query": "Misk زيت شعر بالُصبار ٥٠٠مللي", "target": "P0080", "relevant": ["P0080"]}
+{"qid": "Q0161", "query": "16.9 oz زيت شِعر", "target": "P0081", "relevant": ["P0080", "P0081", "P0089"]}
+{"qid": "Q0162", "query": "زيت شعر مِسك ٥٠٠ مل", "target": "P0081", "relevant": ["P0080", "P0081"]}
+{"qid": "Q0163", "query": "Rawda زيت شعر مرطّب مكثّف", "target": "P0082", "relevant": ["P0082"]}
+{"qid": "Q0164", "query": "زيت شعر روضة ٣٠ ml", "target": "P0082", "relevant": ["P0082"]}
+{"qid": "Q0165", "query": "زيت 250 مل شعر", "target": "P0083", "relevant": ["P0079", "P0083", "P0090"]}
+{"qid": "Q0166", "query": "8.5 أونصة زيت Rawda شعر بالعسل", "target": "P0083", "relevant": ["P0083"]}
+{"qid": "Q0167", "query": "٢٠٠ مللي Rawda زيت شعر", "target": "P0084", "relevant": ["P0084"]}
+{"qid": "Q0168", "query": "زيت شعر روضة 200ML الارغان", "target": "P0084", "relevant": ["P0084"]}
+{"qid": "Q0169", "query": "زيت شِعر صبار", "target": "P0085", "relevant": ["P0080", "P0085", "P0090"]}
+{"qid": "Q0170", "query": "100 مللي زيت شعر", "target": "P0085", "relevant": ["P0085", "P0086"]}
+{"qid": "Q0171", "query": "زيت شعر فيليستا", "target": "P0086", "relevant": ["P0085", "P0086", "P0087"]}
+{"qid": "Q0172", "query": "زيت شعر فيليستا", "target": "P0086", "relevant": ["P0085", "P0086", "P0087"]}
+{"qid": "Q0173", "query": "زيتِ شعر ٣٠ ML فيليستاّ مضـــاد للتجاعيد", "target": "P0087", "relevant": ["P0087"]}
+{"qid": "Q0174", "query": "زيت شعّر فيليستا للتجاعُيد", "target": "P0087", "relevant": ["P0087"]}
+{"qid": "Q0175", "query": "٥٠ml زيت شعَر", "target": "P0088", "relevant": ["P0088"]}
+{"qid": "Q0176", "query": "50مل زيت شعر نــوريش سيْ", "target": "P0088", "relevant": ["P0088"]}
+{"qid": "Q0177", "query": "٥٠٠ML زيت شعر فحم", "target": "P0089", "relevant": ["P0089"]}
+{"qid": "Q0178", "query": "زيت 16.9 oz شعرَ بالفحم", "target": "P0089", "relevant": ["P0089"]}
+{"qid": "Q0179", "query": "زيْت noorish 250 ملل شعر صبار", "target": "P0090", "relevant": ["P0090"]}
+{"qid": "Q0180", "query": "زيت شعر نوريش بالصبار", "target": "P0090", "relevant": ["P0090"]}
+{"qid": "Q0181", "query": "غسولّ وجهَ فيليستا", "target": "P0091", "relevant": ["P0091", "P0092", "P0093"]}
+{"qid": "Q0182", "query": "غسول وجه بالعــسل", "target": "P0091", "relevant": ["P0091", "P0099", "P0105"]}
+{"qid": "Q0183", "query": "غسول 150مل وجه", "target": "P0092", "relevant": ["P0092"]}
+{"qid": "Q0184", "query": "غسول وْجه ١٥٠ml سي", "target": "P0092", "relevant": ["P0092"]}
+{"qid": "Q0185", "query": "غسول وجه بالفحم", "target": "P0093", "relevant": ["P0093", "P0102"]}
+{"qid": "Q0186", "query": "غسوُل وجه ٤٠٠مل", "target": "P0093", "relevant": ["P0093", "P0097"]}
+{"qid": "Q0187", "query": "غسول وْجه رــْـوضة مكثّف", "target": "P0094", "relevant": ["P0094"]}
+{"qid": "Q0188", "query": "غسول وجه روضة مكثّف ٣٠ML", "target": "P0094", "relevant": ["P0094"]}
+{"qid": "Q0189", "query": "غسول 50مل وجه", "target": "P0095", "relevant": ["P0095", "P0100", "P0103", "P0105"]}
+{"qid": "Q0190", "query": "غسول وجه الجاف ٥٠ ملل", "target": "P0095", "relevant": ["P0095", "P0103"]}
+{"qid": "Q0191", "query": "١٠٠ملل غسول وجه بالورد", "target": "P0096", "relevant": ["P0096"]}
+{"qid": "Q0192", "query": "غسِــول وجه", "target": "P0096", "relevant": ["P0091", "P0092", "P0093", "P0094", "P0095", "P0096", "P0097", "P0098", "P0099", "P0100", "P0101", "P0102", "P0103", "P0104", "P0105"]}
+{"qid": "Q0193", "query": "غســـول وجه ورد", "target": "P0097", "relevant": ["P0096", "P0097", "P0100"]}
+{"qid": "Q0194", "query": "400 ملل غسول وجه dana ورد", "target": "P0097", "relevant": ["P0097"]}
+{"qid": "Q0195", "query": "غسول وجه ٢٠٠ مللي dana", "target": "P0098", "relevant": ["P0098"]}
+{"qid": "Q0196", "query": "غسول وجه 6.8 fl oz", "target": "P0098", "relevant": ["P0098", "P0104"]}
+{"qid": "Q0197", "query": "غسول وجِه بالعسل 100 مللي", "target": "P0099", "relevant": ["P0099"]}
+{"qid": "Q0198", "query": "غسَول وجه داـــنه بالعسل", "target": "P0099", "relevant": ["P0099"]}
+{"qid": "Q0199", "query": "غــسول وجه بالورد ٥٠ml", "target": "P0100", "relevant": ["P0100"]}
+{"qid": "Q0200", "query": "٥٠ مللي غسولُ وجه", "target": "P0100", "relevant": ["P0095", "P0100", "P0103", "P0105"]}
+{"qid": "Q0201", "query": "غسولَ وجه خــالٍ من ٢٥٠ ML الكبريتات", "target": "P0101", "relevant": ["P0101"]}
+{"qid": "Q0202", "query": "غسول وجه خالٍ من ٢٥٠ml كبريتـــات misk", "target": "P0101", "relevant": ["P0101"]}
+{"qid": "Q0203", "query": "غسول وجه 1.0 oz فحم", "target": "P0102", "relevant": ["P0102"]}
+{"qid": "Q0204", "query": "غسول وجه فحم Misk ٣٠ML", "target": "P0102", "relevant": ["P0102"]}
+{"qid": "Q0205", "query": "غسوّل وجه جاف", "target": "P0103", "relevant": ["P0095", "P0103"]}
+{"qid": "Q0206", "query": "غسول وجه للشعر الجاف", "target": "P0103", "relevant": ["P0095", "P0103"]}
+{"qid": "Q0207", "query": "غسول وجه 200ملل بالصبار", "target": "P0104", "relevant": ["P0104"]}
+{"qid": "Q0208", "query": "غسول وجه 200ML لومورا بالصبَار", "target": "P0104", "relevant": ["P0104"]}
+{"qid": "Q0209", "query": "غسوِل 50ML وُجه لومورا بالعسل", "target": "P0105", "relevant": ["P0105"]}
+{"qid": "Q0210", "query": "غسول وجْه لومورا بالعسَل 50 مل", "target": "P0105", "relevant": ["P0105"]}
+{"qid": "Q0211", "query": "سيُروم مكثّف ٣٠ ml", "target": "P0106", "relevant": ["P0106"]}
+{"qid": "Q0212", "query": "سيروم ٣٠ ملل اــزورا مرطّب مكثّف", "target": "P0106", "relevant": ["P0106"]}
+{"qid": "Q0213", "query": "سيروم بالفّحم 50مللي", "target": "P0107", "relevant": ["P0107"]}
+{"qid": "Q0214", "query": "سيروَم ٥٠ ML بالفــحم Azora", "target": "P0107", "relevant": ["P0107"]}
+{"qid": "Q0215", "query": "50 ml سيروم ازورا", "target": "P0108", "relevant": ["P0107", "P0108"]}
+{"qid": "Q0216", "query": "٥٠ML سيُروم الكبريتات", "target": "P0108", "relevant": ["P0108"]}
+{"qid": "Q0217", "query": "سيرومُ dana ٥٠٠ ml", "target": "P0109", "relevant": ["P0109"]}
+{"qid": "Q0218", "query": "سيروِم ٥٠٠ مللي Dana الكبريتات", "target": "P0109", "relevant": ["P0109"]}
+{"qid": "Q0219", "query": "٤٠٠مللي سيروم دانة الارغان", "target": "P0110", "relevant": ["P0110"]}
+{"qid": "Q0220", "query": "سيروم أرغان dana", "target": "P0110", "relevant": ["P0110"]}
+{"qid": "Q0221", "query": "6.8 أونصة سيروم", "target": "P0111", "relevant": ["P0111", "P0112", "P0120"]}
+{"qid": "Q0222", "query": "سيروم", "target": "P0111", "relevant": ["P0106", "P0107", "P0108", "P0109", "P0110", "P0111", "P0112", "P0113", "P0114", "P0115", "P0116", "P0117", "P0118", "P0119", "P0120"]}
+{"qid": "Q0223", "query": "سيروم 200ML بالصبار", "target": "P0112", "relevant": ["P0112", "P0120"]}
+{"qid": "Q0224", "query": "200ملل سيروم صبار", "target": "P0112", "relevant": ["P0112", "P0120"]}
+{"qid": "Q0225", "query": "سيروم 1.0 fl oz بالعسل", "target": "P0113", "relevant": ["P0113"]}
+{"qid": "Q0226", "query": "سيروم عسل", "target": "P0113", "relevant": ["P0113"]}
+{"qid": "Q0227", "query": "سيّروم ٣٠مل مِسك", "target": "P0114", "relevant": ["P0113", "P0114"]}
+{"qid": "Q0228", "query": "سيرـــوم 30 ملل مِسك الحساسة", "target": "P0114", "relevant": ["P0114"]}
+{"qid": "Q0229", "query": "250 مل سيروم بالورد", "target": "P0115", "relevant": ["P0115"]}
+{"qid": "Q0230", "query": "سيروم ورد ٢٥٠ML", "target": "P0115", "relevant": ["P0115"]}
+{"qid": "Q0231", "query": "سيروم", "target": "P0116", "relevant": ["P0106", "P0107", "P0108", "P0109", "P0110", "P0111", "P0112", "P0113", "P0114", "P0115", "P0116", "P0117", "P0118", "P0119", "P0120"]}
+{"qid": "Q0232", "query": "سيروم كبريتات ١٥٠ml", "target": "P0116", "relevant": ["P0116"]}
+{"qid": "Q0233", "query": "سيروم فحم 150 ملل", "target": "P0117", "relevant": ["P0117"]}
+{"qid": "Q0234", "query": "سيرـوم ١٥٠ML بالفحم siraj", "target": "P0117", "relevant": ["P0117"]}
+{"qid": "Q0235", "query": "16.9 أونصة Velista سيروَم مضاد للتجاعيد", "target": "P0118", "relevant": ["P0118"]}
+{"qid": "Q0236", "query": "سيروم مضادّ للتجاعيد ٥٠٠ ml", "target": "P0118", "relevant": ["P0118"]}
+{"qid": "Q0237", "query": "سيروم Velista الأرغان", "target": "P0119", "relevant": ["P0119"]}
+{"qid": "Q0238", "query": "سيروم بزيت الأُرغان 13.5 oz", "target": "P0119", "relevant": ["P0110", "P0119"]}
+{"qid": "Q0239", "query": "سيرــوم 6.8 fl oz صبار", "target": "P0120", "relevant": ["P0112", "P0120"]}
+{"qid": "Q0240", "query": "سيروم 200 ml", "target": "P0120", "relevant": ["P0111", "P0112", "P0120"]}
+{"qid": "Q0241", "query": "مزيل ١٥٠ml عرق", "target": "P0121", "relevant": ["P0121"]}
+{"qid": "Q0242", "query": "مزيل عرق بفيتامين 150 ML سى", "target": "P0121", "relevant": ["P0121"]}
+{"qid": "Q0243", "query": "مزيل عَرق روضة الارغان 30ml", "target": "P0122", "relevant": ["P0122"]}
+{"qid": "Q0244", "query": "مّزيل عرق روضه الأرغان", "target": "P0122", "relevant": ["P0122"]}
+{"qid": "Q0245", "query": "مزيل عرق الحساــسة Rawda", "target": "P0123", "relevant": ["P0123"]}
+{"qid": "Q0246", "query": "مزيل عِرق حساسه 30ml", "target": "P0123", "relevant": ["P0123"]}
+{"qid": "Q0247", "query": "100 ملل مزيل عرق سراج للبشره الحساسه", "target": "P0124", "relevant": ["P0124"]}
+{"qid": "Q0248", "query": "siraj مزيل عرق بشره الحساسة", "target": "P0124", "relevant": ["P0124"]}
+{"qid": "Q0249", "query": "مزيل ٥٠ML عرق سراج بالورد", "target": "P0125", "relevant": ["P0125"]}
+{"qid": "Q0250", "query": "مزيل عرق سـراج بالورد ٥٠ml", "target": "P0125", "relevant": ["P0125"]}
+{"qid": "Q0251", "query": "مزيل عرق 30مللي", "target": "P0126", "relevant": ["P0122", "P0123", "P0126", "P0129", "P0130", "P0131", "P0133"]}
+{"qid": "Q0252", "query": "مزيل 30 ML عرق صبار", "target": "P0126", "relevant": ["P0126"]}
+{"qid": "Q0253", "query": "مزيل عرق نوريش مرطّب مكثّف", "target": "P0127", "relevant": ["P0127"]}
+{"qid": "Q0254", "query": "مزيل عرق نوريش", "target": "P0127", "relevant": ["P0127", "P0128", "P0129"]}
+{"qid": "Q0255", "query": "مزيل عرق ٥٠٠ مل نورــيش صبْار", "target": "P0128", "relevant": ["P0128"]}
+{"qid": "Q0256", "query": "مزيل noorish عرق ٥٠٠مللي", "target": "P0128", "relevant": ["P0128"]}
+{"qid": "Q0257", "query": "مزيل عرْق نوريش كبريتات", "target": "P0129", "relevant": ["P0129"]}
+{"qid": "Q0258", "query": "مزيل عرقْ نوـريش خالٍ من الكبريتات", "target": "P0129", "relevant": ["P0129"]}
+{"qid": "Q0259", "query": "مزيل 30ml عرق ازورا بُفيتامين سي", "target": "P0130", "relevant": ["P0130"]}
+{"qid": "Q0260", "query": "azora مزيل عرق", "target": "P0130", "relevant": ["P0130", "P0131", "P0132"]}
+{"qid": "Q0261", "query": "٣٠ مللي مزيل عرق بالفـحم", "target": "P0131", "relevant": ["P0131"]}
+{"qid": "Q0262", "query": "مزيل عرق بالفحم azora", "target": "P0131", "relevant": ["P0131"]}
+{"qid": "Q0263", "query": "مزيل عرق 3.4 oz أزورا الأرغان", "target": "P0132", "relevant": ["P0132"]}
+{"qid": "Q0264", "query": "Azora مزيَل عرق بزيت الارغان ١٠٠مللي", "target": "P0132", "relevant": ["P0132"]}
+{"qid": "Q0265", "query": "مزيل عرق خـالٍ من الكبرـــيتات", "target": "P0133", "relevant": ["P0129", "P0133"]}
+{"qid": "Q0266", "query": "مزيل عَرق كبريتات", "target": "P0133", "relevant": ["P0129", "P0133"]}
+{"qid": "Q0267", "query": "400 ml مزيل عرق دانة مرـــطّب مُكثّف", "target": "P0134", "relevant": ["P0134"]}
+{"qid": "Q0268", "query": "مزيل Dana عرق مكثّف", "target": "P0134", "relevant": ["P0134"]}
+{"qid": "Q0269", "query": "200مللي مـــزيل عرق", "target": "P0135", "relevant": ["P0135"]}
+{"qid": "Q0270", "query": "مـزيل عرق 200 ML Dana صبار", "target": "P0135", "relevant": ["P0135"]}
+{"qid": "Q0271", "query": "أحمَر شفاه سى 200غ", "target": "P0136", "relevant": ["P0136", "P0141"]}
+{"qid": "Q0272", "query": "احمر شفاه بفيتامين سي 200 غ", "target": "P0136", "relevant": ["P0136", "P0141"]}
+{"qid": "Q0273", "query": "أحمر شفاه 4 gm سراج تجاعيد", "target": "P0137", "relevant": ["P0137"]}
+{"qid": "Q0274", "query": "أحمر شفاه سراج", "target": "P0137", "relevant": ["P0136", "P0137", "P0138"]}
+{"qid": "Q0275", "query": "احمر شفاه 200 gm سراج وردْ", "target": "P0138", "relevant": ["P0138"]}
+{"qid": "Q0276", "query": "أحـــمر شفاَه 200 جرام سراج بْالورد", "target": "P0138", "relevant": ["P0138"]}
+{"qid": "Q0277", "query": "احُمر شفاه مِسك بشرة الحساسه 200جرام", "target": "P0139", "relevant": ["P0139"]}
+{"qid": "Q0278", "query": "أحمر شفاه مِــْـسك حســاسه", "target": "P0139", "relevant": ["P0139"]}
+{"qid": "Q0279", "query": "اَحمر شفاه مِسك", "target": "P0140", "relevant": ["P0139", "P0140", "P0141"]}
+{"qid": "Q0280", "query": "احمر شفاه مِسك ٤g تجاعيد", "target": "P0140", "relevant": ["P0140"]}
+{"qid": "Q0281", "query": "احمر شفاِه مِْسك 200 gm سى", "target": "P0141", "relevant": ["P0141"]}
+{"qid": "Q0282", "query": "احمر شفاه 200جرام مـِسك بفيتامين سي", "target": "P0141", "relevant": ["P0141"]}
+{"qid": "Q0283", "query": "200 غرام احمر شفاه", "target": "P0142", "relevant": ["P0136", "P0138", "P0139", "P0141", "P0142", "P0148"]}
+{"qid": "Q0284", "query": "احــمر ٢٠٠غ شفاه بالعسل", "target": "P0142", "relevant": ["P0142", "P0148"]}
+{"qid": "Q0285", "query": "أحمر شفـاه لومورا 4 جم بزُيت الارغْان", "target": "P0143", "relevant": ["P0143"]}
+{"qid": "Q0286", "query": "احمرُ 4 جرام شفاه بزيت ارغان", "target": "P0143", "relevant": ["P0143"]}
+{"qid": "Q0287", "query": "اـحمر شفاه لومورا سىْ 4g", "target": "P0144", "relevant": ["P0144"]}
+{"qid": "Q0288", "query": "4غ احمر شفاه لوُمورا سي", "target": "P0144", "relevant": ["P0144"]}
+{"qid": "Q0289", "query": "٥٠ gm أحمر شفاه noorish", "target": "P0145", "relevant": ["P0145", "P0147"]}
+{"qid": "Q0290", "query": "احمر شفاه نوريش تجاعيد 50 جم", "target": "P0145", "relevant": ["P0145"]}
+{"qid": "Q0291", "query": "احمر شفاه صبار", "target": "P0146", "relevant": ["P0146"]}
+{"qid": "Q0292", "query": "10 غ احمر شُفاه بالصبار", "target": "P0146", "relevant": ["P0146"]}
+{"qid": "Q0293", "query": "أحمر Noorish شفاه للبشرة حساُسه ٥٠غ", "target": "P0147", "relevant": ["P0147"]}
+{"qid": "Q0294", "query": "احمر شفاه ٥٠جم نوريش", "target": "P0147", "relevant": ["P0145", "P0147"]}
+{"qid": "Q0295", "query": "أحمر شفاه أَزورا ٢٠٠g بالعسْل", "target": "P0148", "relevant": ["P0148"]}
+{"qid": "Q0296", "query": "أحمر شفاه ازورا بالعسل", "target": "P0148", "relevant": ["P0148"]}
+{"qid": "Q0297", "query": "احمْر ٤ gm شفاه سي", "target": "P0149", "relevant": ["P0144", "P0149"]}
+{"qid": "Q0298", "query": "احُمر شفاه سي ٤ جم", "target": "P0149", "relevant": ["P0144", "P0149"]}
+{"qid": "Q0299", "query": "احْمر شفاه 50 جم", "target": "P0150", "relevant": ["P0145", "P0147", "P0150"]}
+{"qid": "Q0300", "query": "أحمر شفاه ازورا كبريتات ٥٠g", "target": "P0150", "relevant": ["P0150"]}
+{"qid": "Q0301", "query": "بودرة الجاف", "target": "P0151", "relevant": ["P0151"]}
+{"qid": "Q0302", "query": "بودرة روضه للشعرّ الجاف ٢٠٠ غ", "target": "P0151", "relevant": ["P0151"]}
+{"qid": "Q0303", "query": "بودرة وردُ 200 g", "target": "P0152", "relevant": ["P0152"]}
+{"qid": "Q0304", "query": "بودرة 200 gm روضة باِلورد", "target": "P0152", "relevant": ["P0152"]}
+{"qid": "Q0305", "query": "بوــدره ٤غ روضه بالصبار", "target": "P0153", "relevant": ["P0153"]}
+{"qid": "Q0306", "query": "بودره روّضة بالصبار 4غرام", "target": "P0153", "relevant": ["P0153"]}
+{"qid": "Q0307", "query": "بودره فيليستا", "target": "P0154", "relevant": ["P0154", "P0155", "P0156"]}
+{"qid": "Q0308", "query": "بودره حسُاسه Velista 200غ", "target": "P0154", "relevant": ["P0154"]}
+{"qid": "Q0309", "query": "بـودرة ٢٠٠ جم", "target": "P0155", "relevant": ["P0151", "P0152", "P0154", "P0155", "P0159"]}
+{"qid": "Q0310", "query": "Velista بـــودرة 200gm للتجاعيد", "target": "P0155", "relevant": ["P0155"]}
+{"qid": "Q0311", "query": "بودرة ١٠٠غرام بزيت ارغان", "target": "P0156", "relevant": ["P0156", "P0163"]}
+{"qid": "Q0312", "query": "بودرة فيليســتا الـــأرغان ١٠٠ جم", "target": "P0156", "relevant": ["P0156"]}
+{"qid": "Q0313", "query": "بودره أزورا 4جم مرـطّب مكثّف", "target": "P0157", "relevant": ["P0157"]}
+{"qid": "Q0314", "query": "بــودرة أزورا مكثّف ٤ غرام", "target": "P0157", "relevant": ["P0157"]}
+{"qid": "Q0315", "query": "بودرة اّزورا ورد", "target": "P0158", "relevant": ["P0158"]}
+{"qid": "Q0316", "query": "100gm بودره أزـورا", "target": "P0158", "relevant": ["P0158"]}
+{"qid": "Q0317", "query": "بودره بزيت azora الأرغان 200g", "target": "P0159", "relevant": ["P0159"]}
+{"qid": "Q0318", "query": "بودرة 200 غرام الارغان", "target": "P0159", "relevant": ["P0159"]}
+{"qid": "Q0319", "query": "4 غ بودرة الكبرَيتات", "target": "P0160", "relevant": ["P0160"]}
+{"qid": "Q0320", "query": "4 غرام بودرة دانة الكبريتات", "target": "P0160", "relevant": ["P0160"]}
+{"qid": "Q0321", "query": "١٠جم بودرة دانه للتجاعيد", "target": "P0161", "relevant": ["P0161"]}
+{"qid": "Q0322", "query": "بودره 10 غ", "target": "P0161", "relevant": ["P0161"]}
+{"qid": "Q0323", "query": "بودره دانة اــرغان", "target": "P0162", "relevant": ["P0162"]}
+{"qid": "Q0324", "query": "بودره بزيت الارغان", "target": "P0162", "relevant": ["P0156", "P0159", "P0162", "P0163"]}
+{"qid": "Q0325", "query": "بودره لومورا ١٠٠ غ", "target": "P0163", "relevant": ["P0163", "P0164"]}
+{"qid": "Q0326", "query": "بـودرة ١٠٠جم لومورِا بزيت الأرغان", "target": "P0163", "relevant": ["P0163"]}
+{"qid": "Q0327", "query": "بودرة لومورا ١٠٠ جرام مكثّف", "target": "P0164", "relevant": ["P0164"]}
+{"qid": "Q0328", "query": "بودرُة مرطّب مكثّف", "target": "P0164", "relevant": ["P0157", "P0164"]}
+{"qid": "Q0329", "query": "lumora 50غ بودرة", "target": "P0165", "relevant": ["P0165"]}
+{"qid": "Q0330", "query": "50gm بـــودرة للبشره الدهنية", "target": "P0165", "relevant": ["P0165"]}
+{"qid": "Q0331", "query": "لوشن ٥٠مللي جسم بشرة الحساسة", "target": "P0166", "relevant": ["P0166"]}
+{"qid": "Q0332", "query": "لوشن Lumora جسم", "target": "P0166", "relevant": ["P0166", "P0167", "P0168"]}
+{"qid": "Q0333", "query": "Lumora لوشن جسم", "target": "P0167", "relevant": ["P0166", "P0167", "P0168"]}
+{"qid": "Q0334", "query": "لوشن 200ML جسمّ", "target": "P0167", "relevant": ["P0167", "P0170"]}
+{"qid": "Q0335", "query": "لــوشن جسم لومورا جاّف", "target": "P0168", "relevant": ["P0168"]}
+{"qid": "Q0336", "query": "لوشن جسمْ للشعر ١٥٠ml الجاف", "target": "P0168", "relevant": ["P0168"]}
+{"qid": "Q0337", "query": "لوشن جسم ازورا ٢٥٠ملل", "target": "P0169", "relevant": ["P0169"]}
+{"qid": "Q0338", "query": "لــوشن جَسم أزورا 250مللي", "target": "P0169", "relevant": ["P0169"]}
+{"qid": "Q0339", "query": "لوشن جسِم بالصبار 200مللي", "target": "P0170", "relevant": ["P0170"]}
+{"qid": "Q0340", "query": "لوشن جسمُ أزـورا بالصبار", "target": "P0170", "relevant": ["P0170"]}
+{"qid": "Q0341", "query": "لوشن جسمَ 150 مللي اـــزورا بالورد", "target": "P0171", "relevant": ["P0171"]}
+{"qid": "Q0342", "query": "لـوشن Azora 150 ML جسم", "target": "P0171", "relevant": ["P0171"]}
+{"qid": "Q0343", "query": "لوشن جسم ٣٠ ML سراج الأرغان", "target": "P0172", "relevant": ["P0172"]}
+{"qid": "Q0344", "query": "لوشن جسم بزيت الارغان 30ملل", "target": "P0172", "relevant": ["P0172"]}
+{"qid": "Q0345", "query": "لوشن جْسم ١٥٠ مللي Siraj", "target": "P0173", "relevant": ["P0173"]}
+{"qid": "Q0346", "query": "لوشن جسم سرـــاج بالورْد", "target": "P0173", "relevant": ["P0173"]}
+{"qid": "Q0347", "query": "لوشن جسم ٥٠مللي سـراج الكبريتات", "target": "P0174", "relevant": ["P0174"]}
+{"qid": "Q0348", "query": "لوشن جسم 50 ml خاـلٍ من كبريتِات", "target": "P0174", "relevant": ["P0174"]}
+{"qid": "Q0349", "query": "لوشن جسم عسل 50 ML", "target": "P0175", "relevant": ["P0175"]}
+{"qid": "Q0350", "query": "لوّشن جسم ٥٠ML", "target": "P0175", "relevant": ["P0166", "P0174", "P0175"]}
+{"qid": "Q0351", "query": "لـوشنِ جسم دانه للبشره الدهنيه 13.5 oz", "target": "P0176", "relevant": ["P0176"]}
+{"qid": "Q0352", "query": "لوشن جسم", "target": "P0176", "relevant": ["P0166", "P0167", "P0168", "P0169", "P0170", "P0171", "P0172", "P0173", "P0174", "P0175", "P0176", "P0177", "P0178", "P0179", "P0180"]}
+{"qid": "Q0353", "query": "لوشن جَسم", "target": "P0177", "relevant": ["P0166", "P0167", "P0168", "P0169", "P0170", "P0171", "P0172", "P0173", "P0174", "P0175", "P0176", "P0177", "P0178", "P0179", "P0180"]}
+{"qid": "Q0354", "query": "150 ملل لوشن جسَم دانهِ بالصبار", "target": "P0177", "relevant": ["P0177"]}
+{"qid": "Q0355", "query": "لوشن جسم 100ملل نوريْش", "target": "P0178", "relevant": ["P0178", "P0179"]}
+{"qid": "Q0356", "query": "لوشن جسم مضــاد للتجاعيد ١٠٠ ml", "target": "P0178", "relevant": ["P0178"]}
+{"qid": "Q0357", "query": "لوشَن جسم نوريش بالصبار", "target": "P0179", "relevant": ["P0179"]}
+{"qid": "Q0358", "query": "لوّشن جِسم بالصبار 3.4 أونصة", "target": "P0179", "relevant": ["P0179"]}
+{"qid": "Q0359", "query": "لوشن جسم 30 مل نوريش للشعر الجاف", "target": "P0180", "relevant": ["P0180"]}
+{"qid": "Q0360", "query": "لوشن جسم نوريش الجاف", "target": "P0180", "relevant": ["P0180"]}
+{"qid": "Q0361", "query": "صابون لـــومورا بالفحم ١٠٠gm", "target": "P0181", "relevant": ["P0181"]}
+{"qid": "Q0362", "query": "صاِبون Lumora بالفحم", "target": "P0181", "relevant": ["P0181"]}
+{"qid": "Q0363", "query": "Lumora صابون بزيت الارَغان", "target": "P0182", "relevant": ["P0182"]}
+{"qid": "Q0364", "query": "صابون ٢٠٠ غ لومورا", "target": "P0182", "relevant": ["P0182"]}
+{"qid": "Q0365", "query": "١٠غ صابون لومورا للبشره الدهنية", "target": "P0183", "relevant": ["P0183"]}
+{"qid": "Q0366", "query": "صابوّن لومـورا ١٠g بـشرة الدهنيه", "target": "P0183", "relevant": ["P0183"]}
+{"qid": "Q0367", "query": "٢٠٠جرام Velista صابون", "target": "P0184", "relevant": ["P0184", "P0186"]}
+{"qid": "Q0368", "query": "صابون ٢٠٠غ فيليستا بشرة دهنية", "target": "P0184", "relevant": ["P0184"]}
+{"qid": "Q0369", "query": "صاــبون Velista ٤ جم", "target": "P0185", "relevant": ["P0185"]}
+{"qid": "Q0370", "query": "صابون فيليستا ٤غرام شعر الجاف", "target": "P0185", "relevant": ["P0185"]}
+{"qid": "Q0371", "query": "صابونّ", "target": "P0186", "relevant": ["P0181", "P0182", "P0183", "P0184", "P0185", "P0186", "P0187", "P0188", "P0189", "P0190", "P0191", "P0192", "P0193", "P0194", "P0195"]}
+{"qid": "Q0372", "query": "velista صابون للتجــاعيد", "target": "P0186", "relevant": ["P0186"]}
+{"qid": "Q0373", "query": "صابون سراج بالورد", "target": "P0187", "relevant": ["P0187"]}
+{"qid": "Q0374", "query": "صابون", "target": "P0187", "relevant": ["P0181", "P0182", "P0183", "P0184", "P0185", "P0186", "P0187", "P0188", "P0189", "P0190", "P0191", "P0192", "P0193", "P0194", "P0195"]}
+{"qid": "Q0375", "query": "٥٠غرام صابون بِالصبار", "target": "P0188", "relevant": ["P0188"]}
+{"qid": "Q0376", "query": "صابون سراج ٥٠ جم صبار", "target": "P0188", "relevant": ["P0188"]}
+{"qid": "Q0377", "query": "صابون دهِنيه 100gm", "target": "P0189", "relevant": ["P0189"]}
+{"qid": "Q0378", "query": "صابون سراج للبِشرة دهنيه 100غ", "target": "P0189", "relevant": ["P0189"]}
+{"qid": "Q0379", "query": "صابون ٥٠ غرام نوريشَ", "target": "P0190", "relevant": ["P0190"]}
+{"qid": "Q0380", "query": "صـــابون كبريتات", "target": "P0190", "relevant": ["P0190", "P0194"]}
+{"qid": "Q0381", "query": "صابون 200غرام نوريش سى", "target": "P0191", "relevant": ["P0191"]}
+{"qid": "Q0382", "query": "صابوُن سي 200g", "target": "P0191", "relevant": ["P0191"]}
+{"qid": "Q0383", "query": "noorish ٢٠٠غرام صابونَ", "target": "P0192", "relevant": ["P0191", "P0192"]}
+{"qid": "Q0384", "query": "صابون بالعسل", "target": "P0192", "relevant": ["P0192"]}
+{"qid": "Q0385", "query": "صابـــون 10غرام الارغان", "target": "P0193", "relevant": ["P0193"]}
+{"qid": "Q0386", "query": "صابون بزيت الأرغان", "target": "P0193", "relevant": ["P0182", "P0193"]}
+{"qid": "Q0387", "query": "صاـــبون خالٍْ من الكبريـــتات ٤ gm", "target": "P0194", "relevant": ["P0194"]}
+{"qid": "Q0388", "query": "صابون ٤gm الكبريتات", "target": "P0194", "relevant": ["P0194"]}
+{"qid": "Q0389", "query": "صابون داـنه فحم 4 غرام", "target": "P0195", "relevant": ["P0195"]}
+{"qid": "Q0390", "query": "٤ جم صابون دانه بالفحم", "target": "P0195", "relevant": ["P0195"]}
+{"qid": "Q0391", "query": "قّناع شعر روضة بفيتامين سى", "target": "P0196", "relevant": ["P0196"]}
+{"qid": "Q0392", "query": "50 ملل قناع شعر روضة سى", "target": "P0196", "relevant": ["P0196"]}
+{"qid": "Q0393", "query": "50 مل قناع شعر", "target": "P0197", "relevant": ["P0196", "P0197", "P0205", "P0206"]}
+{"qid": "Q0394", "query": "Rawda قناع شعر مكثـّف 1.7 أونصة", "target": "P0197", "relevant": ["P0197"]}
+{"qid": "Q0395", "query": "قناع شعر روّضة خالٍ من الكبريتات ٥٠٠ml", "target": "P0198", "relevant": ["P0198"]}
+{"qid": "Q0396", "query": "قناع شعر روضةْ خالٍ ٥٠٠ ML من الكبريتات", "target": "P0198", "relevant": ["P0198"]}
+{"qid": "Q0397", "query": "قــناع شعر للبشره Lumora حَساسه 30 ملل", "target": "P0199", "relevant": ["P0199"]}
+{"qid": "Q0398", "query": "قناع شعر 1.0 أونصة لوموـــرا للبشرة الحساسه", "target": "P0199", "relevant": ["P0199"]}
+{"qid": "Q0399", "query": "قناع شعر 13.5 أونصة مكثّف", "target": "P0200", "relevant": ["P0200"]}
+{"qid": "Q0400", "query": "قناع شعر مرـــطّب 400ml مكثّف", "target": "P0200", "relevant": ["P0200"]}
+{"qid": "Q0401", "query": "قناع شعر لـــلبشره الدَهنيه 100مل", "target": "P0201", "relevant": ["P0201"]}
+{"qid": "Q0402", "query": "3.4 oz قناع شعر", "target": "P0201", "relevant": ["P0201", "P0208", "P0210"]}
+{"qid": "Q0403", "query": "قناع شعر بالّعسل 16.9 fl oz", "target": "P0202", "relevant": ["P0202"]}
+{"qid": "Q0404", "query": "قناع شعر دانه", "target": "P0202", "relevant": ["P0202", "P0203", "P0204"]}
+{"qid": "Q0405", "query": "٢٥٠ml قناع شعر حساسة dana", "target": "P0203", "relevant": ["P0203"]}
+{"qid": "Q0406", "query": "قناع شعر للُبشره 250مل الحساّسة Dana", "target": "P0203", "relevant": ["P0203"]}
+{"qid": "Q0407", "query": "250 ML قناع شعر بفيتّامين سي", "target": "P0204", "relevant": ["P0204"]}
+{"qid": "Q0408", "query": "قناع شعر دانه 250ml سى", "target": "P0204", "relevant": ["P0204"]}
+{"qid": "Q0409", "query": "قناع 50 ML شعر مِسك الدهنية", "target": "P0205", "relevant": ["P0205"]}
+{"qid": "Q0410", "query": "misk قناع ٥٠ملل شَعر للبشره الدهنيه", "target": "P0205", "relevant": ["P0205"]}
+{"qid": "Q0411", "query": "قناع شعر 50 مللي مِسك للشعر الجاف", "target": "P0206", "relevant": ["P0206"]}
+{"qid": "Q0412", "query": "50 ml قناع شَعر الجاف", "target": "P0206", "relevant": ["P0206"]}
+{"qid": "Q0413", "query": "٢٠٠مللي قناع شعر مِسك", "target": "P0207", "relevant": ["P0207"]}
+{"qid": "Q0414", "query": "قناع شعر للبشرة ٢٠٠ مل الحساسه", "target": "P0207", "relevant": ["P0207"]}
+{"qid": "Q0415", "query": "قنـاع شعر الحساسه 100مل Velista", "target": "P0208", "relevant": ["P0208"]}
+{"qid": "Q0416", "query": "قناع ١٠٠مل شعر فيليستا الحساسة", "target": "P0208", "relevant": ["P0208"]}
+{"qid": "Q0417", "query": "قناعْ شعُر فيليستاَ للــشعر الجاف ٣٠ مل", "target": "P0209", "relevant": ["P0209"]}
+{"qid": "Q0418", "query": "قناع شعر 30 ml فيليســتا الجاف", "target": "P0209", "relevant": ["P0209"]}
+{"qid": "Q0419", "query": "قناع شعر 100مل velista", "target": "P0210", "relevant": ["P0208", "P0210"]}
+{"qid": "Q0420", "query": "قناع شعر الارغان velista", "target": "P0210", "relevant": ["P0210"]}
+{"qid": "Q0421", "query": "٥٠gm مقشر جسم", "target": "P0211", "relevant": ["P0211", "P0212", "P0225"]}
+{"qid": "Q0422", "query": "مقشر جسْم 50 جرام جاف", "target": "P0211", "relevant": ["P0211"]}
+{"qid": "Q0423", "query": "مقشر جْسم 50 غ", "target": "P0212", "relevant": ["P0211", "P0212", "P0225"]}
+{"qid": "Q0424", "query": "٥٠gm مقشر جسم siraj", "target": "P0212", "relevant": ["P0211", "P0212"]}
+{"qid": "Q0425", "query": "مقشر ١٠g جسم بالفحم", "target": "P0213", "relevant": ["P0213"]}
+{"qid": "Q0426", "query": "مقِشر جسم بالّفحم siraj 10 جرام", "target": "P0213", "relevant": ["P0213"]}
+{"qid": "Q0427", "query": "مقشر جسم ٢٠٠غ", "target": "P0214", "relevant": ["P0214", "P0220"]}
+{"qid": "Q0428", "query": "مقشر ٢٠٠جرام جسم دهنية", "target": "P0214", "relevant": ["P0214"]}
+{"qid": "Q0429", "query": "مَقــشر جسم بالصْبار 10 غرام", "target": "P0215", "relevant": ["P0215"]}
+{"qid": "Q0430", "query": "مقشر جسم ١٠جم", "target": "P0215", "relevant": ["P0213", "P0215"]}
+{"qid": "Q0431", "query": "مقشر جسم ١٠٠gm", "target": "P0216", "relevant": ["P0216", "P0218", "P0219", "P0221", "P0223", "P0224"]}
+{"qid": "Q0432", "query": "100 gm مقشر جسم روضة فحم", "target": "P0216", "relevant": ["P0216"]}
+{"qid": "Q0433", "query": "مقشر جسم الجاف ٤ جم", "target": "P0217", "relevant": ["P0217"]}
+{"qid": "Q0434", "query": "٤ gm مقشر جسم", "target": "P0217", "relevant": ["P0217", "P0222"]}
+{"qid": "Q0435", "query": "مـقشر جسمُ ١٠٠ g مكُثّف", "target": "P0218", "relevant": ["P0218"]}
+{"qid": "Q0436", "query": "مقــشر جسمَ فيليستاُ مرطّب ١٠٠gm مكثُّف", "target": "P0218", "relevant": ["P0218"]}
+{"qid": "Q0437", "query": "100 جم مـــقشر جسم فيليستا", "target": "P0219", "relevant": ["P0218", "P0219"]}
+{"qid": "Q0438", "query": "مقـــشر جْسم فــيليستا 100جم بزيِت الأرغان", "target": "P0219", "relevant": ["P0219"]}
+{"qid": "Q0439", "query": "مقشر misk جسم ورد", "target": "P0220", "relevant": ["P0220"]}
+{"qid": "Q0440", "query": "200 gm Misk مقشر جسّم", "target": "P0220", "relevant": ["P0220"]}
+{"qid": "Q0441", "query": "مقشر 100جرام جسم مِّسك", "target": "P0221", "relevant": ["P0221"]}
+{"qid": "Q0442", "query": "100 جم مقشر جسم", "target": "P0221", "relevant": ["P0216", "P0218", "P0219", "P0221", "P0223", "P0224"]}
+{"qid": "Q0443", "query": "٤g مقشر جسمُ مِسك بالصبار", "target": "P0222", "relevant": ["P0222"]}
+{"qid": "Q0444", "query": "misk مقشر 4g جسم بالصبار", "target": "P0222", "relevant": ["P0222"]}
+{"qid": "Q0445", "query": "100غ مقشر جسم أرغان", "target": "P0223", "relevant": ["P0219", "P0223"]}
+{"qid": "Q0446", "query": "مقشْر جسم نوريش الأرغان ١٠٠ غ", "target": "P0223", "relevant": ["P0223"]}
+{"qid": "Q0447", "query": "مقـشر ١٠٠gm جسم بالعــسل Noorish", "target": "P0224", "relevant": ["P0224"]}
+{"qid": "Q0448", "query": "مقشر جسم نوـــريش عسل", "target": "P0224", "relevant": ["P0224"]}
+{"qid": "Q0449", "query": "مقشر جسم ٥٠ جرام نوريش مضاد تجاعيد", "target": "P0225", "relevant": ["P0225"]}
+{"qid": "Q0450", "query": "مقشر جسم 50 غ نوريش", "target": "P0225", "relevant": ["P0225"]}
+{"qid": "Q0451", "query": "500 ملل ماء ميسيلار فيليستا مكثَّف", "target": "P0226", "relevant": ["P0226"]}
+{"qid": "Q0452", "query": "ماء ميسيَلار فيليستا مكــثّف", "target": "P0226", "relevant": ["P0226"]}
+{"qid": "Q0453", "query": "ماء ميسيلار", "target": "P0227", "relevant": ["P0226", "P0227", "P0228", "P0229", "P0230", "P0231", "P0232", "P0233", "P0234", "P0235", "P0236", "P0237", "P0238", "P0239", "P0240"]}
+{"qid": "Q0454", "query": "ماء ميسيلار ٥٠٠ مللي فيليستا", "target": "P0227", "relevant": ["P0226", "P0227"]}
+{"qid": "Q0455", "query": "ماء velista ميسيلار للشعر 50ml جاف", "target": "P0228", "relevant": ["P0228"]}
+{"qid": "Q0456", "query": "مُاء ميسيلار فيليستا 1.7 fl oz", "target": "P0228", "relevant": ["P0228"]}
+{"qid": "Q0457", "query": "3.4 أونصة ماء ميسيلــار بالورد Noorish", "target": "P0229", "relevant": ["P0229"]}
+{"qid": "Q0458", "query": "١٠٠ ml ماء مِيسيلار نوريش", "target": "P0229", "relevant": ["P0229"]}
+{"qid": "Q0459", "query": "ماء ميسيلار بالعسل", "target": "P0230", "relevant": ["P0230"]}
+{"qid": "Q0460", "query": "ماء ميسيلار ٣٠ ml نوـريش", "target": "P0230", "relevant": ["P0230"]}
+{"qid": "Q0461", "query": "ماء ميسْيلار نُوريش ١٥٠ML الحساسة", "target": "P0231", "relevant": ["P0231"]}
+{"qid": "Q0462", "query": "150ملل ماءِ ميسيلار بشرة اـــلحساسه", "target": "P0231", "relevant": ["P0231"]}
+{"qid": "Q0463", "query": "ماءَ ٣٠ مل ميسيلار مِسك الجاف", "target": "P0232", "relevant": ["P0232"]}
+{"qid": "Q0464", "query": "ماء 30 ملل ميـسيلار الجاف", "target": "P0232", "relevant": ["P0232"]}
+{"qid": "Q0465", "query": "ماء ميسِيلار", "target": "P0233", "relevant": ["P0226", "P0227", "P0228", "P0229", "P0230", "P0231", "P0232", "P0233", "P0234", "P0235", "P0236", "P0237", "P0238", "P0239", "P0240"]}
+{"qid": "Q0466", "query": "misk ماء ميسيـلار بفيتامين سي 500ملل", "target": "P0233", "relevant": ["P0233"]}
+{"qid": "Q0467", "query": "ماء ميسيلار مِسَك", "target": "P0234", "relevant": ["P0232", "P0233", "P0234"]}
+{"qid": "Q0468", "query": "ماء ميسيلار ٢٠٠ مللي الارغان", "target": "P0234", "relevant": ["P0234"]}
+{"qid": "Q0469", "query": "siraj ماء ميسيلار 150مل أرغان", "target": "P0235", "relevant": ["P0235"]}
+{"qid": "Q0470", "query": "ماء 150 مل ميْسيلار سراَج", "target": "P0235", "relevant": ["P0235"]}
+{"qid": "Q0471", "query": "ماء ميسيلّار للشعر الجاف", "target": "P0236", "relevant": ["P0228", "P0232", "P0236"]}
+{"qid": "Q0472", "query": "ماء ٥٠٠ ملل ميسيلار", "target": "P0236", "relevant": ["P0226", "P0227", "P0233", "P0236"]}
+{"qid": "Q0473", "query": "400 مللي ماء ميسيلار للتجاعيد", "target": "P0237", "relevant": ["P0237"]}
+{"qid": "Q0474", "query": "ماء 400 ML ميسيلار مضاد للتَجاعيد", "target": "P0237", "relevant": ["P0237"]}
+{"qid": "Q0475", "query": "ماء ميسيِلار أزورا مرطّب مـــكثّف", "target": "P0238", "relevant": ["P0238"]}
+{"qid": "Q0476", "query": "١٥٠ ML ماء ميسيلار مرطّب مـكثُّف", "target": "P0238", "relevant": ["P0238"]}
+{"qid": "Q0477", "query": "ماء ميسيلار", "target": "P0239", "relevant": ["P0226", "P0227", "P0228", "P0229", "P0230", "P0231", "P0232", "P0233", "P0234", "P0235", "P0236", "P0237", "P0238", "P0239", "P0240"]}
+{"qid": "Q0478", "query": "ماء ميسيلار ازورا 400 ml صبار", "target": "P0239", "relevant": ["P0239"]}
+{"qid": "Q0479", "query": "ماء ميسيلار ازــورُا حسْــاسة 400مل", "target": "P0240", "relevant": ["P0240"]}
+{"qid": "Q0480", "query": "ماء ميسيلار للبشره ٤٠٠ ملل حساسة", "target": "P0240", "relevant": ["P0240"]}
+{"qid": "Q0481", "query": "٣٠ml كريمْ اساس لومورا مكثّف", "target": "P0241", "relevant": ["P0241"]}
+{"qid": "Q0482", "query": "كريم أساس مكثّف", "target": "P0241", "relevant": ["P0241", "P0246"]}
+{"qid": "Q0483", "query": "كريم اساس لومورا بزيت الارغان", "target": "P0242", "relevant": ["P0242"]}
+{"qid": "Q0484", "query": "كريم اساس ٣٠ ml ارغان", "target": "P0242", "relevant": ["P0242"]}
+{"qid": "Q0485", "query": "كريم أساس بْفيتامين سى", "target": "P0243", "relevant": ["P0243", "P0255"]}
+{"qid": "Q0486", "query": "كريم 30 مل أساس سي", "target": "P0243", "relevant": ["P0243"]}
+{"qid": "Q0487", "query": "كرـــيم اساس سْـــراج", "target": "P0244", "relevant": ["P0244", "P0245", "P0246"]}
+{"qid": "Q0488", "query": "كريم اساس siraj", "target": "P0244", "relevant": ["P0244", "P0245", "P0246"]}
+{"qid": "Q0489", "query": "كريمِ أساس ٤٠٠ مل بالورد", "target": "P0245", "relevant": ["P0245"]}
+{"qid": "Q0490", "query": "كريم 400مللي siraj اساس ورد", "target": "P0245", "relevant": ["P0245"]}
+{"qid": "Q0491", "query": "كرـيم أساس سّراج", "target": "P0246", "relevant": ["P0244", "P0245", "P0246"]}
+{"qid": "Q0492", "query": "كريمِ 3.4 أونصة اساس", "target": "P0246", "relevant": ["P0246"]}
+{"qid": "Q0493", "query": "كريم اساس 500مللي للبشره الحساسة", "target": "P0247", "relevant": ["P0247"]}
+{"qid": "Q0494", "query": "كريمِ اساس ٥٠٠ ml دانة", "target": "P0247", "relevant": ["P0247", "P0248"]}
+{"qid": "Q0495", "query": "كريم أسـاس دانة بشرة 500 مللي الدهنية", "target": "P0248", "relevant": ["P0248"]}
+{"qid": "Q0496", "query": "16.9 oz كريم اـــساس دانه", "target": "P0248", "relevant": ["P0247", "P0248"]}
+{"qid": "Q0497", "query": "كـريم اساس بالعّسل 50ml", "target": "P0249", "relevant": ["P0249"]}
+{"qid": "Q0498", "query": "1.7 oz كريم أساس", "target": "P0249", "relevant": ["P0249", "P0253"]}
+{"qid": "Q0499", "query": "كريم أساّس فيليستا بالورد 1.0 أونصة", "target": "P0250", "relevant": ["P0250"]}
+{"qid": "Q0500", "query": "كريم أساس فيليستا بالوَرد ٣٠ ML", "target": "P0250", "relevant": ["P0250"]}
+{"qid": "Q0501", "query": "كريم Velista اســاس بالعسل 30 مل", "target": "P0251", "relevant": ["P0251"]}
+{"qid": "Q0502", "query": "كـــريم Velista أساس بــالعسل", "target": "P0251", "relevant": ["P0251"]}
+{"qid": "Q0503", "query": "كريم اساس فيـليستا بَالفحم", "target": "P0252", "relevant": ["P0252"]}
+{"qid": "Q0504", "query": "كريم أسْاس velista ٥٠٠ مللي", "target": "P0252", "relevant": ["P0252"]}
+{"qid": "Q0505", "query": "كريم اساس نوريُش بالفحم", "target": "P0253", "relevant": ["P0253"]}
+{"qid": "Q0506", "query": "كريم Noorish اسـِــاس", "target": "P0253", "relevant": ["P0253", "P0254", "P0255"]}
+{"qid": "Q0507", "query": "كرُيم اساس صبار 30 ml", "target": "P0254", "relevant": ["P0254"]}
+{"qid": "Q0508", "query": "كريمِ ٣٠ ML أساس نوريش بالصبار", "target": "P0254", "relevant": ["P0254"]}
+{"qid": "Q0509", "query": "٤٠٠ مل كريم أساسُ سي", "target": "P0255", "relevant": ["P0255"]}
+{"qid": "Q0510", "query": "400ML كريم اساس سى", "target": "P0255", "relevant": ["P0255"]}
+{"qid": "Q0511", "query": "80 pcs مناديل مبللة الجاف", "target": "P0256", "relevant": ["P0256"]}
+{"qid": "Q0512", "query": "مناديل مبلله 80 حبة", "target": "P0256", "relevant": ["P0256", "P0262", "P0267", "P0270"]}
+{"qid": "Q0513", "query": "25 حبة مـناديل مبلــلة", "target": "P0257", "relevant": ["P0257", "P0258", "P0261", "P0264"]}
+{"qid": "Q0514", "query": "25 قطعه منادـــيل مبللة سراج بفيتامين سيْ", "target": "P0257", "relevant": ["P0257"]}
+{"qid": "Q0515", "query": "مناــديل 25قطعة مبللة سراج كبريتات", "target": "P0258", "relevant": ["P0258"]}
+{"qid": "Q0516", "query": "٢٥ قطعه مناديل siraj مُبلله", "target": "P0258", "relevant": ["P0257", "P0258"]}
+{"qid": "Q0517", "query": "10قطعة مـــناديل مبللة بالصبْار", "target": "P0259", "relevant": ["P0259", "P0269"]}
+{"qid": "Q0518", "query": "منــاديل مبللْة مِسك بالصبار 10pcs", "target": "P0259", "relevant": ["P0259"]}
+{"qid": "Q0519", "query": "مّناديل مبلّله مِسك 50 قطعه", "target": "P0260", "relevant": ["P0260"]}
+{"qid": "Q0520", "query": "منادـــيل مبلِله الجاف", "target": "P0260", "relevant": ["P0256", "P0260"]}
+{"qid": "Q0521", "query": "مناديل 25قطعة مبْللة مِسك عسل", "target": "P0261", "relevant": ["P0261"]}
+{"qid": "Q0522", "query": "مناديل مبللة بالعسل", "target": "P0261", "relevant": ["P0261", "P0262", "P0267"]}
+{"qid": "Q0523", "query": "مــناديل مبلله دــانه بالعسل ٨٠ قطعه", "target": "P0262", "relevant": ["P0262"]}
+{"qid": "Q0524", "query": "80 قطعة مناديل مبللة دانه", "target": "P0262", "relevant": ["P0262"]}
+{"qid": "Q0525", "query": "10 حبة مناديل مبللُة", "target": "P0263", "relevant": ["P0259", "P0263", "P0265", "P0266", "P0268", "P0269"]}
+{"qid": "Q0526", "query": "مناديل Dana 10حبة مبللة للبشرة الحساسة", "target": "P0263", "relevant": ["P0263"]}
+{"qid": "Q0527", "query": "25قطعة مناديل مـبللة سَى", "target": "P0264", "relevant": ["P0257", "P0264"]}
+{"qid": "Q0528", "query": "مناديل dana مبلله بفيتاـــمين سَي ٢٥ قطعه", "target": "P0264", "relevant": ["P0264"]}
+{"qid": "Q0529", "query": "مناديل 10 حبة مبلِله", "target": "P0265", "relevant": ["P0259", "P0263", "P0265", "P0266", "P0268", "P0269"]}
+{"qid": "Q0530", "query": "منـاديل 10قطعة مبلله لومورا للبشرة الدهنية", "target": "P0265", "relevant": ["P0265"]}
+{"qid": "Q0531", "query": "مناديْل مبللة الحساسة", "target": "P0266", "relevant": ["P0263", "P0266"]}
+{"qid": "Q0532", "query": "مناديل Lumora مبلله", "target": "P0266", "relevant": ["P0265", "P0266", "P0267"]}
+{"qid": "Q0533", "query": "منادـيل مبُلله بالعسل 80 قطعه", "target": "P0267", "relevant": ["P0262", "P0267"]}
+{"qid": "Q0534", "query": "مناديل lumora مبـــللة عسل 80 حبة", "target": "P0267", "relevant": ["P0267"]}
+{"qid": "Q0535", "query": "مناديل مبلله بالورد", "target": "P0268", "relevant": ["P0268"]}
+{"qid": "Q0536", "query": "منادـــيل 10 حبة مبلله ورد", "target": "P0268", "relevant": ["P0268"]}
+{"qid": "Q0537", "query": "مناديل 10pcs Azora مبـللَه بالصبار", "target": "P0269", "relevant": ["P0269"]}
+{"qid": "Q0538", "query": "مناديل مبللة", "target": "P0269", "relevant": ["P0256", "P0257", "P0258", "P0259", "P0260", "P0261", "P0262", "P0263", "P0264", "P0265", "P0266", "P0267", "P0268", "P0269", "P0270"]}
+{"qid": "Q0539", "query": "مناديل مبللة 80pcs سّي", "target": "P0270", "relevant": ["P0270"]}
+{"qid": "Q0540", "query": "٨٠حبة مناديل azora مـــبلَله", "target": "P0270", "relevant": ["P0270"]}

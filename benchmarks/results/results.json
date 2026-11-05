@@ -1,0 +1,104 @@
+{
+  "souqnorm_version": "0.1.0",
+  "python": "3.13.18",
+  "machine": "x86_64",
+  "catalog_size": 270,
+  "num_queries": 540,
+  "unit_gold_size": 65,
+  "unit_extraction": {
+    "naive regex (Latin units)": {
+      "precision": 0.7857142857142857,
+      "recall": 0.20754716981132076,
+      "F1": 0.3283582089552239,
+      "tp": 11,
+      "fp": 3,
+      "fn": 42
+    },
+    "souqnorm": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0,
+      "tp": 53,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "retrieval": {
+    "baseline (lowercase+split)": {
+      "P@1": 0.575925925925926,
+      "MRR@10": 0.6943437683715459,
+      "Recall@10": 0.8930202821869487,
+      "ZeroResult": 0.014814814814814815
+    },
+    "souqnorm normalize": {
+      "P@1": 0.9,
+      "MRR@10": 0.9340806878306877,
+      "Recall@10": 0.987222222222222,
+      "ZeroResult": 0.0
+    },
+    "+ quantity keys": {
+      "P@1": 0.9314814814814815,
+      "MRR@10": 0.9550661375661376,
+      "Recall@10": 0.9918518518518519,
+      "ZeroResult": 0.0
+    },
+    "+ quantity keys + keywords": {
+      "P@1": 1.0,
+      "MRR@10": 1.0,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    }
+  },
+  "ablation": {
+    "- digits": {
+      "P@1": 1.0,
+      "MRR@10": 1.0,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    },
+    "- remove_diacritics": {
+      "P@1": 0.9222222222222223,
+      "MRR@10": 0.9506114050558493,
+      "Recall@10": 0.9935185185185185,
+      "ZeroResult": 0.001851851851851852
+    },
+    "- remove_tatweel": {
+      "P@1": 0.9462962962962963,
+      "MRR@10": 0.9647376543209875,
+      "Recall@10": 0.9900617283950617,
+      "ZeroResult": 0.0
+    },
+    "- unify_alef": {
+      "P@1": 0.9814814814814815,
+      "MRR@10": 0.9894620811287479,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    },
+    "- alef_maqsura_to_yaa": {
+      "P@1": 0.9962962962962963,
+      "MRR@10": 0.9981481481481481,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    },
+    "- taa_marbuta_to_haa": {
+      "P@1": 0.9574074074074074,
+      "MRR@10": 0.973772780717225,
+      "Recall@10": 0.9958641975308642,
+      "ZeroResult": 0.0
+    },
+    "- split_scripts": {
+      "P@1": 1.0,
+      "MRR@10": 1.0,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    },
+    "- article stripping": {
+      "P@1": 0.9351851851851852,
+      "MRR@10": 0.9571781305114638,
+      "Recall@10": 0.9921604938271604,
+      "ZeroResult": 0.0
+    }
+  },
+  "throughput_queries_per_sec": 27166.967024737827,
+  "mean_latency_ms": 0.036809408981481634
+}
