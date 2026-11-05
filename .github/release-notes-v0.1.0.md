@@ -8,7 +8,7 @@ First public release.
 - `souqnorm` command-line tool with JSON / JSON Lines output.
 - Benchmarks: a seeded synthetic retrieval benchmark with ablations, and `benchmarks/real_titles.py` for running the same evaluation on your own catalog.
 
-No runtime dependencies. Python 3.9+.
+No runtime dependencies. Python 3.10+.
 
 ```bash
 pip install git+https://github.com/mtanzil6/souqnorm@v0.1.0
