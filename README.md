@@ -26,7 +26,7 @@ representation before indexing or querying, whatever search engine you use.
 ## Install
 
 ```bash
-pip install git+https://github.com/mtanzil6/souqnorm.git@v0.1.0
+pip install souqnorm
 ```
 
 For development:
