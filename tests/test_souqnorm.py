@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from souqnorm import NormalizerConfig, QueryNormalizer, normalize_text, process
+from souqnorm import DEFAULT_STOPWORDS, NormalizerConfig, QueryNormalizer, normalize_text, process
 from souqnorm.cli import main
 
 
@@ -19,7 +19,8 @@ from souqnorm.cli import main
     ("۵۰", "50"),
     ("٣٫٤", "3.4"),
     ("3,4 oz", "3.4 oz"),
-    ("1,000", "1,000"),
+    ("1,000", "1000"),
+    ("1,500 مل", "1500 مل"),
     ("Shampoo  ANTI-Dandruff", "shampoo anti-dandruff"),
     ("400مل", "400 مل"),
     ("spf50", "spf 50"),
@@ -123,9 +124,82 @@ def test_real_catalog_patterns(query, label):
     assert [q.label for q in process(query).quantities] == [label]
 
 
-@pytest.mark.parametrize("query", ["بطارية 7000 ملي امبير", "power bank 10000 mah"])
+@pytest.mark.parametrize("query", ["بطارية 7000 ملي امبير", "power bank 10000 mah", "7000 mAh", "5000mAh battery"])
 def test_battery_capacity_not_volume(query):
     assert process(query).quantities == []
+
+
+@pytest.mark.parametrize("query, label, base", [
+    ("take 5 ml a day", "5 ml", 5),
+    ("take 500 mg a day", "500 mg", 0.5),
+    ("أمبولة 50 مل لتساقط الشعر", "50 ml", 50),  # "امب..." guard must not reject ampoule products
+])
+def test_battery_guard_is_narrow(query, label, base):
+    qs = process(query).quantities
+    assert len(qs) == 1
+    assert qs[0].label == label
+    assert qs[0].base_value == pytest.approx(base, rel=1e-3)
+
+
+def test_match_key_explicit_precision():
+    coarse = {process(f"{v} مل").quantities[0].match_key() for v in (118, 120, 125)}
+    assert coarse == {"qty:120ml"}
+    fine = [process(f"{v} مل").quantities[0].match_key(sig=3) for v in (118, 120, 125)]
+    assert fine == ["qty:118ml", "qty:120ml", "qty:125ml"]
+
+
+def test_thousands_separator_in_quantity():
+    qs = process("شامبو 1,500 مل").quantities
+    assert len(qs) == 1
+    assert qs[0].label == "1500 ml"
+    assert qs[0].base_value == pytest.approx(1500)
+
+
+def test_dimension_pattern_discards_first_number():
+    """"38*29.5 سم" is a bag's width*height; only the second number (height) becomes the Quantity."""
+    qs = process("حقيبة 38*29.5 سم").quantities
+    assert len(qs) == 1
+    assert qs[0].value == 29.5
+    assert qs[0].label == "29.5 cm"
+
+
+def test_count_noun_kept_as_keyword():
+    r = process("فيتامين 60 كبسولة")
+    assert {"فيتامين", "كبسوله"} <= set(r.keywords)
+    assert "60" not in r.keywords
+
+
+def test_unit_word_outside_quantity_context_kept():
+    r = process("بطارية 7000 ملي امبير")
+    assert {"ملي", "امبير"} <= set(r.keywords)
+
+
+def test_default_stopwords_exported():
+    assert "من" in DEFAULT_STOPWORDS
+    qn = QueryNormalizer(stopwords=DEFAULT_STOPWORDS | {"براند"})
+    assert "براند" not in qn.process("براند مميز للعناية").keywords
+
+
+def test_split_scripts_works_without_lowercasing():
+    cfg = NormalizerConfig(lowercase=False)
+    assert normalize_text("كريمCREAM", cfg) == "كريم CREAM"
+
+
+def test_tokens_exclude_arabic_punctuation_when_disabled():
+    qn = QueryNormalizer(NormalizerConfig(punctuation=False))
+    norm = qn.normalize("شامبو، بلسم؟")
+    assert qn.tokenize(norm) == ["شامبو", "بلسم"]
+
+
+def test_cli_disable_switch(capsys):
+    assert main(["--disable", "unify_alef", "أحمر"]) == 0
+    out = json.loads(capsys.readouterr().out)
+    assert out["normalized"] == "أحمر"
+
+
+def test_cli_disable_unknown_switch_errors(capsys):
+    with pytest.raises(SystemExit):
+        main(["--disable", "not_a_switch", "foo"])
 
 
 def test_stopwords_and_count_nouns_in_keywords():

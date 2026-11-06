@@ -53,7 +53,10 @@ class Quantity:
 
     def match_key(self, sig: int = 2) -> str:
         """Unit-independent key for matching sizes across unit systems, rounding the base value to
-        *sig* significant figures (e.g. 400 ml and 13.5 fl oz -> 'qty:400ml')."""
+        *sig* significant figures (e.g. 400 ml and 13.5 fl oz -> 'qty:400ml'). The default is coarse
+        enough to absorb cross-unit conversion rounding (e.g. fl oz -> ml); pass sig=3 or higher for
+        exact same-unit sizes that should stay distinct (118 ml, 120 ml and 125 ml all collide into
+        'qty:120ml' at the default but resolve to separate keys at sig=3)."""
         v = self.base_value
         if v > 0:
             v = round(v, sig - 1 - int(math.floor(math.log10(abs(v)))))
@@ -79,7 +82,7 @@ class UnitParser:
         unit_re = "|".join(re.escape(a) for a in alts)
         self._pattern = re.compile(
             rf"(?:(?P<mult>\d+)\s*[x*]\s*)?(?P<num>\d+(?:\.\d+)?)\s*(?P<unit>{unit_re})(?![\w])"
-            r"(?!\s*(?:امبير|امب|amp|ampere|a\b|h\b))"  # "7000 ملي امبير" / "mAh" is battery capacity
+            r"(?!\s*(?:ملي\s*امبير|امبير|mah\b|amp\b|ampere\b))"  # "7000 ملي امبير" / "mAh" is battery capacity
         )
 
     @property
@@ -90,6 +93,9 @@ class UnitParser:
                          for w in s.split())
 
     def parse(self, normalized: str) -> list[Quantity]:
+        """Find quantity expressions. For a two-number dimension like "38*29.5 سم" (width*height, not a
+        pack), only the second number is kept as the Quantity; the first is discarded entirely and does
+        not appear anywhere in the result."""
         out: list[Quantity] = []
         for m in self._pattern.finditer(normalized):
             unit = self._surface_to_unit[m.group("unit")]

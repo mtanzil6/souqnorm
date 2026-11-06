@@ -9,8 +9,11 @@ Experiments
   E2  Size/quantity coverage (souqnorm vs. a Latin-unit regex)
   E3  Known-item retrieval with BM25 over the full catalog. Queries are built from sampled titles:
       3-5 consecutive words of the product name, orthographic perturbations users commonly make, and the
-      size re-written in a different but equivalent form. A title is relevant if it contains every query
-      word (compared after normalization) and, when the query states a size, has the same size.
+      size re-written in a different but equivalent form. Scored under two relevance definitions: "strict"
+      (standard known-item retrieval -- only the source title the query was generated from is relevant)
+      and "lenient" (any title that contains every query word, compared after normalization, and, when
+      the query states a size, has the same size -- these near-duplicates are plausibly relevant too,
+      but are not an independently audited judgment).
 Writes benchmarks/results/real_titles.json
 """
 from __future__ import annotations
@@ -171,22 +174,32 @@ def main() -> None:
                "+ quantity keys": lambda t: (lambda r: qn.tokenize(r.text_without_quantities)
                                              + [q.match_key() for q in r.quantities])(qn.process(t)),
                "+ quantity keys + keywords": sq_analyzer}
-    out["E3_retrieval"] = {"num_queries": len(queries),
-                           "mean_relevant_per_query": sum(len(q["relevant"]) for q in queries) / len(queries)}
+    out["E3_retrieval"] = {
+        "num_queries": len(queries),
+        "mean_relevant_per_query_lenient": sum(len(q["relevant"]) for q in queries) / len(queries),
+        "relevance_definitions": {
+            "strict": "only the source title the query was generated from (standard known-item retrieval)",
+            "lenient": "any title matching every query word after normalization (and query size, if stated)",
+        },
+    }
     for name, an in systems.items():
         t0 = time.perf_counter()
         index = InvertedBM25([an(t) for t in titles])
-        p1 = mrr = rec = zero = 0.0
+        totals = {defn: {"p1": 0.0, "mrr": 0.0, "rec": 0.0, "zero": 0.0} for defn in ("strict", "lenient")}
         for q in queries:
             hits = index.search(an(q["query"]), 10)
-            rel = q["relevant"]
-            zero += not hits
-            p1 += bool(hits) and hits[0] in rel
-            mrr += next((1 / r for r, h in enumerate(hits, 1) if h in rel), 0.0)
-            rec += len(rel & set(hits)) / min(len(rel), 10)
+            for defn, rel in (("strict", {q["target"]}), ("lenient", q["relevant"])):
+                t = totals[defn]
+                t["zero"] += not hits
+                t["p1"] += bool(hits) and hits[0] in rel
+                t["mrr"] += next((1 / r for r, h in enumerate(hits, 1) if h in rel), 0.0)
+                t["rec"] += len(rel & set(hits)) / min(len(rel), 10)
         n = len(queries)
-        out["E3_retrieval"][name] = {"P@1": p1 / n, "MRR@10": mrr / n, "Recall@10": rec / n,
-                                     "ZeroResult": zero / n, "seconds": time.perf_counter() - t0}
+        out["E3_retrieval"][name] = {
+            defn: {"P@1": t["p1"] / n, "MRR@10": t["mrr"] / n, "Recall@10": t["rec"] / n, "ZeroResult": t["zero"] / n}
+            for defn, t in totals.items()
+        }
+        out["E3_retrieval"][name]["seconds"] = time.perf_counter() - t0
     out["E3_examples"] = [{"query": q["query"], "target_title": titles[q["target"]], "num_relevant": len(q["relevant"])}
                           for q in queries[:12]]
 

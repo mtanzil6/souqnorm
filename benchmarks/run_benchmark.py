@@ -8,6 +8,7 @@ from __future__ import annotations
 import csv
 import json
 import math
+import os
 import platform
 import re
 import time
@@ -129,7 +130,8 @@ def fmt(rows: dict, cols: list[str]) -> str:
 def main() -> None:
     catalog = list(csv.DictReader(open(DATA / "catalog.csv", encoding="utf-8")))
     queries = [json.loads(l) for l in open(DATA / "queries.jsonl", encoding="utf-8")]
-    gold = [json.loads(l) for l in open(DATA / "units_gold.jsonl", encoding="utf-8")]
+    gold = [json.loads(l) for l in open(DATA / "units_gold.jsonl", encoding="utf-8")
+            if l.strip() and not l.lstrip().startswith("#")]
     qn = QueryNormalizer()
 
     units = {
@@ -146,8 +148,8 @@ def main() -> None:
 
     ablation = {}
     full = NormalizerConfig()
-    for flag in ["digits", "remove_diacritics", "remove_tatweel", "unify_alef", "alef_maqsura_to_yaa",
-                 "taa_marbuta_to_haa", "split_scripts"]:
+    for flag in ["unicode_nfkc", "digits", "punctuation", "remove_diacritics", "remove_tatweel", "unify_alef",
+                 "alef_maqsura_to_yaa", "taa_marbuta_to_haa", "hamza_carriers", "lowercase", "split_scripts"]:
         q2 = QueryNormalizer(replace(full, **{flag: False}))
         ablation[f"- {flag}"] = evaluate_retrieval(souqnorm_analyzer(q2, True, True), catalog, queries)
     ablation["- article stripping"] = evaluate_retrieval(
@@ -161,6 +163,8 @@ def main() -> None:
 
     results = {
         "souqnorm_version": __version__, "python": platform.python_version(), "machine": platform.machine(),
+        "hardware": {"processor": platform.processor(), "cpu_count": os.cpu_count(),
+                     "ci": os.environ.get("CI", "").lower() in ("1", "true")},
         "catalog_size": len(catalog), "num_queries": len(queries), "unit_gold_size": len(gold),
         "unit_extraction": units, "retrieval": retrieval, "ablation": ablation,
         "throughput_queries_per_sec": len(texts) / dt, "mean_latency_ms": 1000 * dt / len(texts),

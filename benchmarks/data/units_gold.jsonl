@@ -1,3 +1,4 @@
+# author-written gold labels, not an independently audited annotation set -- see README "Known limitations"
 {"text": "شامبو 400 مل", "gold": [[400, "ml"]]}
 {"text": "شامبو ٤٠٠مل", "gold": [[400, "ml"]]}
 {"text": "بلسم 250ملل", "gold": [[250, "ml"]]}
@@ -63,3 +64,12 @@
 {"text": "Retinol 0.5% night cream", "gold": []}
 {"text": "Lotion for 3 months use", "gold": []}
 {"text": "Gift set 2026", "gold": []}
+{"text": "جل شعر 340ج", "gold": [[340, "g"]]}
+{"text": "فيتامين 60 كبسولة", "gold": [[60, "pcs"]]}
+{"text": "مناديل 48 منديل", "gold": [[48, "pcs"]]}
+{"text": "حقيبة 38*29.5 سم", "gold": [[29.5, "cm"]]}
+{"text": "شامبو 1,500 مل", "gold": [[1500, "ml"]]}
+{"text": "take 5 ml a day", "gold": [[5, "ml"]]}
+{"text": "take 500 mg a day", "gold": [[0.5, "g"]]}
+{"text": "بطارية 7000 ملي امبير", "gold": []}
+{"text": "7000 mAh", "gold": []}

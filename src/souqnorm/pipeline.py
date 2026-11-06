@@ -5,9 +5,12 @@ import re
 from dataclasses import dataclass, field
 
 from .arabic import AR_RANGE, NormalizerConfig, normalize_text
-from .units import Quantity, UnitParser
+from .units import UNIT_LEXICON, Quantity, UnitParser
 
-_TOKEN = re.compile(rf"[{AR_RANGE}a-z0-9]+(?:[-'.][{AR_RANGE}a-z0-9]+)*")
+# ، ؛ ؟ are excluded even though they fall inside AR_RANGE, so tokens don't carry punctuation
+# when NormalizerConfig.punctuation is off.
+_TOKEN_CHAR = rf"(?:(?![،؛؟])[{AR_RANGE}a-z0-9])"
+_TOKEN = re.compile(rf"{_TOKEN_CHAR}+(?:[-'.]{_TOKEN_CHAR}+)*")
 _NUMERIC = re.compile(r"^\d+(?:\.\d+)?$")
 # definite-article forms, longest first: wa-al, bi-al, ka-al, fa-al, li-l, al
 _ARTICLE_PREFIXES = ("وال", "بال", "كال", "فال", "لل", "ال")
@@ -64,7 +67,6 @@ class QueryNormalizer:
         self.units = UnitParser(self.config)
         self.strip_article = strip_article
         self.min_keyword_len = min_keyword_len
-        self._unit_words = self.units.unit_words
         self.stopwords = frozenset(normalize_text(w, self.config) for w in (stopwords or ()))
 
     def normalize(self, text: str) -> str:
@@ -74,14 +76,17 @@ class QueryNormalizer:
         return _TOKEN.findall(normalized)
 
     def keywords(self, tokens: list[str]) -> list[str]:
-        """Alternative keywords: drops numbers, unit words (e.g. 'مل'), stopwords, special characters
-        and empty strings; splits and joins hyphenated words; optionally adds article-stripped forms."""
+        """Alternative keywords: drops numbers, stopwords, special characters and empty strings;
+        splits and joins hyphenated words; optionally adds article-stripped forms. Measurement unit
+        words (e.g. 'مل') are dropped too, but only by :meth:`process`, which removes them as part of
+        each matched quantity's span before tokenizing -- a unit word outside any matched quantity
+        (e.g. 'ملي' in '7000 ملي امبير', which the battery guard rejects as a quantity) is kept."""
         out: list[str] = []
         for tok in tokens:
             parts = [p for p in re.split(r"[-'.]", tok) if p]
             candidates = parts + (["".join(parts)] if len(parts) > 1 else [])
             for c in candidates:
-                if _NUMERIC.match(c) or c.isdigit() or c in self._unit_words:
+                if _NUMERIC.match(c) or c.isdigit():
                     continue
                 if len(c) < self.min_keyword_len or c in self.stopwords:
                     continue
@@ -97,11 +102,15 @@ class QueryNormalizer:
         norm = self.normalize(text)
         quantities = self.units.parse(norm)
         stripped = norm
+        count_nouns: list[str] = []
         for q in reversed(quantities):
+            if UNIT_LEXICON[q.unit][0] == "pcs":  # "60 كبسوله" -> keep "كبسوله" as a keyword
+                count_nouns.append(re.sub(r"^[\d\sx*.]+", "", q.text))
             stripped = stripped[: q.start] + " " + stripped[q.end:]
         stripped = re.sub(r"\s+", " ", stripped).strip()
         tokens = self.tokenize(norm)
-        kws = self.keywords(self.tokenize(stripped))
+        extra = [t for w in count_nouns for t in self.tokenize(w)]
+        kws = self.keywords(self.tokenize(stripped) + extra)
         canonical = stripped
         if quantities:
             canonical = (stripped + " " + " ".join(q.label for q in quantities)).strip()

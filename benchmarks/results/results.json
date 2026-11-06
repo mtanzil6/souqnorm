@@ -1,26 +1,31 @@
 {
-  "souqnorm_version": "0.1.0",
-  "python": "3.13.18",
-  "machine": "x86_64",
+  "souqnorm_version": "0.2.0",
+  "python": "3.13.12",
+  "machine": "arm64",
+  "hardware": {
+    "processor": "arm",
+    "cpu_count": 14,
+    "ci": false
+  },
   "catalog_size": 270,
   "num_queries": 540,
-  "unit_gold_size": 65,
+  "unit_gold_size": 74,
   "unit_extraction": {
     "naive regex (Latin units)": {
-      "precision": 0.7857142857142857,
-      "recall": 0.20754716981132076,
-      "F1": 0.3283582089552239,
-      "tp": 11,
+      "precision": 0.8125,
+      "recall": 0.21666666666666667,
+      "F1": 0.34210526315789475,
+      "tp": 13,
       "fp": 3,
-      "fn": 42
+      "fn": 47
     },
     "souqnorm": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "F1": 1.0,
-      "tp": 53,
-      "fp": 0,
-      "fn": 0
+      "precision": 0.9833333333333333,
+      "recall": 0.9833333333333333,
+      "F1": 0.9833333333333333,
+      "tp": 59,
+      "fp": 1,
+      "fn": 1
     }
   },
   "retrieval": {
@@ -50,7 +55,19 @@
     }
   },
   "ablation": {
+    "- unicode_nfkc": {
+      "P@1": 1.0,
+      "MRR@10": 1.0,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    },
     "- digits": {
+      "P@1": 1.0,
+      "MRR@10": 1.0,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    },
+    "- punctuation": {
       "P@1": 1.0,
       "MRR@10": 1.0,
       "Recall@10": 0.9992592592592593,
@@ -86,6 +103,18 @@
       "Recall@10": 0.9958641975308642,
       "ZeroResult": 0.0
     },
+    "- hamza_carriers": {
+      "P@1": 1.0,
+      "MRR@10": 1.0,
+      "Recall@10": 0.9992592592592593,
+      "ZeroResult": 0.0
+    },
+    "- lowercase": {
+      "P@1": 0.9462962962962963,
+      "MRR@10": 0.9686728395061729,
+      "Recall@10": 0.992777777777778,
+      "ZeroResult": 0.0
+    },
     "- split_scripts": {
       "P@1": 1.0,
       "MRR@10": 1.0,
@@ -99,6 +128,6 @@
       "ZeroResult": 0.0
     }
   },
-  "throughput_queries_per_sec": 27229.183407784898,
-  "mean_latency_ms": 0.03672530259258885
+  "throughput_queries_per_sec": 56438.27450701167,
+  "mean_latency_ms": 0.01771847223776772
 }

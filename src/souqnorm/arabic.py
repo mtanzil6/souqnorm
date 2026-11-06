@@ -16,6 +16,7 @@ _HAMZA_CARRIERS = str.maketrans({"ؤ": "و", "ئ": "ي"})
 _DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹", "0123456789" * 2)
 _PUNCT = str.maketrans({"٫": ".", "٬": ",", "،": ",", "؛": ";", "؟": "?", "٪": "%", "×": "x"})
 
+_THOUSANDS = re.compile(r"\b\d{1,3}(?:,\d{3})+\b")
 _DECIMAL_COMMA = re.compile(r"(?<=\d),(?=\d{1,2}\b)")
 _WS = re.compile(r"\s+")
 
@@ -40,7 +41,7 @@ class NormalizerConfig:
 
 
 _SPLIT_DIGIT = re.compile(r"(?<=\d)(?=[^\d\s.,%])|(?<=[^\d\s.,])(?=\d)")
-_SPLIT_SCRIPT = re.compile(rf"(?<=[{AR_RANGE}])(?=[a-z])|(?<=[a-z])(?=[{AR_RANGE}])")
+_SPLIT_SCRIPT = re.compile(rf"(?<=[{AR_RANGE}])(?=[a-zA-Z])|(?<=[a-zA-Z])(?=[{AR_RANGE}])")
 
 
 def normalize_text(text: str, config: NormalizerConfig | None = None) -> str:
@@ -53,6 +54,7 @@ def normalize_text(text: str, config: NormalizerConfig | None = None) -> str:
         s = s.translate(_DIGITS)
     if c.punctuation:
         s = s.translate(_PUNCT)
+        s = _THOUSANDS.sub(lambda m: m.group(0).replace(",", ""), s)
         s = _DECIMAL_COMMA.sub(".", s)
     if c.remove_diacritics:
         s = _DIACRITICS.sub("", s)
