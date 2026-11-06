@@ -107,7 +107,7 @@ software itself:
 
 ```bibtex
 @software{tanzil_souqnorm_2026,
-  author  = {Tanzil, Muhammad},
+  author  = {Tanzeel, Muhammad},
   title   = {souqnorm: Normalization, size parsing and keyword expansion for Arabic/English e-commerce search queries},
   year    = {2026},
   url     = {https://github.com/mtanzil6/souqnorm},
@@ -119,4 +119,4 @@ This section will be updated with the paper's citation and DOI once it is accept
 
 ## License
 
-MIT © 2026 Muhammad Tanzil
+MIT © 2026 Muhammad Tanzeel
