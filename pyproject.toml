@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
-authors = [{ name = "Muhammad Tanzil", email = "mtanzil666@gmail.com" }]
+authors = [{ name = "Muhammad Tanzeel", email = "mtanzil666@gmail.com" }]
 keywords = ["arabic", "nlp", "e-commerce", "search", "query normalization", "information retrieval"]
 classifiers = [
   "Programming Language :: Python :: 3",
