@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 (unreleased)
+## 0.2.0 (2026-11-07)
 - Fix: battery-capacity guard no longer rejects legitimate sizes like "5 ml a day" or "500 mg a day",
   and no longer rejects ampoule products ("امبولة") that happen to start with the same letters as "امبير"
 - Fix: thousands separators ("1,500 مل") no longer truncate the number to the last group ("500 مل")
