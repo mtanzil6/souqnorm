@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.2.1 (2026-11-07)
 - Fix: battery-capacity guard no longer rejects sizes followed by the standalone pharmacy abbreviation
   "amp" (ampoule), e.g. "zinc 50mg amp" -- the English mAh/amp/ampere lookahead was never actually
   load-bearing (the "mAh" pattern is already rejected because the lone-letter "m" unit can't match a

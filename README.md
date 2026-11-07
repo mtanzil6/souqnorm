@@ -111,7 +111,7 @@ software itself:
   title   = {souqnorm: Normalization, size parsing and keyword expansion for Arabic/English e-commerce search queries},
   year    = {2026},
   url     = {https://github.com/mtanzil6/souqnorm},
-  version = {0.2.0}
+  version = {0.2.1}
 }
 ```
 
