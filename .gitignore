@@ -7,3 +7,4 @@ dist/
 benchmarks/results/real_titles.json
 .DS_Store
 souqnorm_SoftwareX_draft.docx
+.claude/

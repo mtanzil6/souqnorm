@@ -133,6 +133,7 @@ def test_battery_capacity_not_volume(query):
     ("take 5 ml a day", "5 ml", 5),
     ("take 500 mg a day", "500 mg", 0.5),
     ("أمبولة 50 مل لتساقط الشعر", "50 ml", 50),  # "امب..." guard must not reject ampoule products
+    ("zinc 50mg amp", "50 mg", 0.05),  # "amp" (pharmacy abbreviation for ampoule) must not look like mAh
 ])
 def test_battery_guard_is_narrow(query, label, base):
     qs = process(query).quantities

@@ -82,7 +82,10 @@ class UnitParser:
         unit_re = "|".join(re.escape(a) for a in alts)
         self._pattern = re.compile(
             rf"(?:(?P<mult>\d+)\s*[x*]\s*)?(?P<num>\d+(?:\.\d+)?)\s*(?P<unit>{unit_re})(?![\w])"
-            r"(?!\s*(?:ملي\s*امبير|امبير|mah\b|amp\b|ampere\b))"  # "7000 ملي امبير" / "mAh" is battery capacity
+            r"(?!\s*(?:ملي\s*امبير|امبير))"  # "7000 ملي امبير" is battery capacity, not volume.
+            # English "mAh"/"amp"/"ampere" need no guard: the lone-letter "m" unit already can't match
+            # ("mAh"'s trailing "h" fails the no-following-word-char check below), so adding "amp\b" here
+            # only misfired on unrelated units, e.g. rejecting "zinc 50mg amp" (amp = ampoule abbreviation).
         )
 
     @property
