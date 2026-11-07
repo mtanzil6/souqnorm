@@ -1,5 +1,5 @@
 {
-  "souqnorm_version": "0.2.0",
+  "souqnorm_version": "0.2.2",
   "python": "3.13.12",
   "machine": "arm64",
   "hardware": {
@@ -20,12 +20,12 @@
       "fn": 47
     },
     "souqnorm": {
-      "precision": 0.9833333333333333,
-      "recall": 0.9833333333333333,
-      "F1": 0.9833333333333333,
-      "tp": 59,
-      "fp": 1,
-      "fn": 1
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0,
+      "tp": 60,
+      "fp": 0,
+      "fn": 0
     }
   },
   "retrieval": {
@@ -128,6 +128,6 @@
       "ZeroResult": 0.0
     }
   },
-  "throughput_queries_per_sec": 56438.27450701167,
-  "mean_latency_ms": 0.01771847223776772
+  "throughput_queries_per_sec": 56848.07672451138,
+  "mean_latency_ms": 0.017590744623534934
 }
