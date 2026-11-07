@@ -28,7 +28,8 @@ UNIT_LEXICON: dict[str, tuple[str, float, tuple[str, ...]]] = {
     # length (dimensions of tools, cables, towels); multipliers are read as dimensions, not packs
     "mm": ("mm", 1.0, ("mm", "ملم", "مم", "مليمتر", "ملليمتر")),
     "cm": ("mm", 10.0, ("cm", "سم", "سنتيمتر", "سنتي")),
-    "m": ("mm", 1000.0, ("m", "م", "متر", "meter", "meters", "metre", "metres")),
+    # bare "m" is excluded: it matches the trailing letter of Latin model/shade codes (RB4195M, 5M, 35M)
+    "m": ("mm", 1000.0, ("م", "متر", "meter", "meters", "metre", "metres")),
 }
 
 _LENGTH = {"mm", "cm", "m"}

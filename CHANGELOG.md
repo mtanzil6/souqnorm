@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 (2026-11-08)
+- Fix: bare Latin "m" is no longer read as the metre unit, since it matched the trailing letter of
+  model/shade codes (e.g. "RB4195M" sunglasses, "5M" hair-dye shade); "meter"/"meters"/"metre"/"metres"
+  and the Arabic bare "م" are unaffected
+
 ## 0.2.1 (2026-11-07)
 - Fix: battery-capacity guard no longer rejects sizes followed by the standalone pharmacy abbreviation
   "amp" (ampoule), e.g. "zinc 50mg amp" -- the English mAh/amp/ampere lookahead was never actually

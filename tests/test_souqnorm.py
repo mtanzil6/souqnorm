@@ -129,6 +129,12 @@ def test_battery_capacity_not_volume(query):
     assert process(query).quantities == []
 
 
+@pytest.mark.parametrize("query", ["Ray-Ban RB4195M sunglasses", "RB4297M", "RB3648M", "صبغة 5M", "صبغة 35M"])
+def test_latin_m_not_model_or_shade_code(query):
+    # bare Latin "m" is not a metre unit: it matches the trailing letter of model/shade codes
+    assert process(query).quantities == []
+
+
 @pytest.mark.parametrize("query, label, base", [
     ("take 5 ml a day", "5 ml", 5),
     ("take 500 mg a day", "500 mg", 0.5),

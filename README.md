@@ -15,7 +15,7 @@ representation before indexing or querying, whatever search engine you use.
   (`400مل` → `400 مل`). Every step can be switched off in `NormalizerConfig`.
 - **Size and quantity parsing.** It recognizes Arabic and English unit spellings for volume (مل/ملل/مللي/ml, لتر/l,
   oz/fl oz/أونصة), mass (جم/ج/غرام/g, كجم/kg, ملغ/mg, باوند/lb), counts (قطعة/حبة/كبسولة/قرص/منديل/كيس/pcs) and
-  length (ملم/سم/م/mm/cm/m), plus pack multipliers (`2×50 مل`, `10x6مل`). Battery capacity (`7000 ملي امبير`) is
+  length (ملم/سم/م/mm/cm/meter), plus pack multipliers (`2×50 مل`, `10x6مل`). Battery capacity (`7000 ملي امبير`) is
   not mistaken for volume. It converts each size to a
   base unit (ml, g, pcs, mm) and gives it a unit-independent `match_key` (400 ml ≡ 13.5 fl oz ≡ 0.4 l).
 - **Alternative keywords.** It builds a clean keyword list for query expansion. Numbers, matched-quantity
@@ -111,7 +111,7 @@ software itself:
   title   = {souqnorm: Normalization, size parsing and keyword expansion for Arabic/English e-commerce search queries},
   year    = {2026},
   url     = {https://github.com/mtanzil6/souqnorm},
-  version = {0.2.1}
+  version = {0.2.2}
 }
 ```
 
